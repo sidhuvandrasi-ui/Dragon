@@ -5,18 +5,13 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Muskan Club ❤️</title>
+<title>DG PREDICTION HUB</title>
 
-<!-- META PIXEL -->
+<!-- Meta Pixel Code -->
 <script>
 !function(f,b,e,v,n,t,s)
-{
-if(f.fbq)return;
-n=f.fbq=function(){
-n.callMethod ?
-n.callMethod.apply(n,arguments) :
-n.queue.push(arguments)
-};
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
 if(!f._fbq)f._fbq=n;
 n.push=n;
 n.loaded=!0;
@@ -27,11 +22,11 @@ t.async=!0;
 t.src=v;
 s=b.getElementsByTagName(e)[0];
 s.parentNode.insertBefore(t,s)
-}(window,document,'script',
+}(window, document, 'script',
 'https://connect.facebook.net/en_US/fbevents.js');
 
-fbq('init','1734610900989359');
-fbq('track','PageView');
+fbq('init', '1734610900989359');
+fbq('track', 'PageView');
 </script>
 
 <noscript>
@@ -39,615 +34,340 @@ fbq('track','PageView');
 height="1"
 width="1"
 style="display:none"
-src="https://www.facebook.com/tr?id=1734610900989359&ev=PageView&noscript=1">
+src="https://www.facebook.com/tr?id=1734610900989359&ev=PageView&noscript=1"
+/>
 </noscript>
+<!-- End Meta Pixel Code -->
+
 
 <style>
 
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-html{
-    scroll-behavior:smooth;
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
 }
 
 body{
-    min-height:100vh;
-    background:#030205;
-    color:#fff;
-    font-family:Arial,Helvetica,sans-serif;
-    overflow-x:hidden;
+  min-height:100vh;
+  background:#020b05;
+  color:white;
+  font-family:Arial,sans-serif;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+  padding:20px;
 }
 
 
-/* BACKGROUND */
+/* CARD */
 
-.bg{
-    position:fixed;
-    inset:0;
-    overflow:hidden;
-    pointer-events:none;
-}
+.card{
 
-.orb{
-    position:absolute;
-    border-radius:50%;
-    filter:blur(90px);
-}
+  width:100%;
+  max-width:430px;
 
-.orb1{
-    width:360px;
-    height:360px;
-    background:#6d28ff;
-    top:-230px;
-    left:-180px;
-    opacity:.25;
-}
+  background:
+    radial-gradient(
+      circle at 50% 15%,
+      rgba(70,120,40,.18),
+      transparent 35%
+    ),
+    linear-gradient(
+      180deg,
+      #03170b,
+      #011008
+    );
 
-.orb2{
-    width:330px;
-    height:330px;
-    background:#ff1688;
-    right:-190px;
-    bottom:-180px;
-    opacity:.18;
-}
+  border:1px solid rgba(150,170,45,.65);
 
-.orb3{
-    width:220px;
-    height:220px;
-    background:#742cff;
-    left:50%;
-    top:38%;
-    transform:translate(-50%,-50%);
-    opacity:.08;
-}
+  border-radius:32px;
 
+  padding:55px 25px 38px;
 
-/* PAGE */
+  text-align:center;
 
-.page{
-    position:relative;
-    z-index:2;
-
-    width:100%;
-    max-width:500px;
-
-    min-height:100vh;
-
-    margin:auto;
-
-    padding:28px 18px 25px;
-
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-}
-
-
-/* TOP */
-
-.top{
-    width:100%;
-
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-
-    margin-bottom:40px;
-}
-
-.brand-mini{
-    color:#8d8599;
-    font-size:10px;
-    font-weight:800;
-    letter-spacing:1.5px;
-}
-
-.menu-dot{
-    width:28px;
-    height:28px;
-
-    border-radius:50%;
-
-    display:flex;
-    align-items:center;
-    justify-content:center;
-
-    background:rgba(255,255,255,.035);
-
-    border:1px solid rgba(255,255,255,.08);
-
-    color:#8d8498;
-
-    font-size:12px;
+  box-shadow:
+    0 0 35px rgba(70,120,40,.12),
+    inset 0 0 60px rgba(0,80,40,.10);
 }
 
 
 /* LOGO */
 
-.logo-stage{
-    position:relative;
+.logo{
 
-    width:125px;
-    height:125px;
+  width:145px;
+  height:145px;
 
-    margin-bottom:27px;
+  margin:0 auto 38px;
+
+  border-radius:50%;
+
+  background:#00150b;
+
+  border:5px solid #91a936;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  box-shadow:
+    0 0 0 8px rgba(110,140,40,.08),
+    0 0 22px rgba(110,150,45,.25);
+
+  animation:logoNeon 2.8s ease-in-out infinite;
 }
 
-.logo-stage::before{
-    content:"";
+.logo span{
 
-    position:absolute;
+  font-size:42px;
+  font-weight:900;
 
-    inset:-38px;
+  color:#b7c75c;
 
-    border-radius:50%;
-
-    background:
-        radial-gradient(
-            circle,
-            rgba(117,55,255,.28),
-            rgba(255,30,145,.08) 42%,
-            transparent 70%
-        );
-
-    filter:blur(22px);
-
-    animation:floatGlow 4s ease-in-out infinite;
+  letter-spacing:-2px;
 }
 
-@keyframes floatGlow{
 
-    0%,100%{
-        transform:scale(.88);
-        opacity:.65;
-    }
+/* LOGO NEON */
 
-    50%{
-        transform:scale(1.12);
-        opacity:1;
-    }
-}
+@keyframes logoNeon{
 
-.logo-border{
-    position:relative;
-
-    width:100%;
-    height:100%;
-
-    padding:3px;
-
-    border-radius:50%;
-
-    background:
-        linear-gradient(
-            135deg,
-            #7038ff,
-            #c43fff,
-            #ff2995
-        );
+  0%,100%{
 
     box-shadow:
-        0 0 30px rgba(116,50,255,.22),
-        0 0 60px rgba(255,38,148,.08);
-}
+      0 0 0 5px rgba(110,140,40,.08),
+      0 0 22px rgba(110,150,45,.25);
 
-.logo{
-    width:100%;
-    height:100%;
+  }
 
-    display:block;
+  50%{
 
-    object-fit:cover;
+    box-shadow:
+      0 0 0 7px rgba(160,190,50,.10),
+      0 0 42px rgba(160,200,55,.50);
 
-    border-radius:50%;
-
-    border:4px solid #07050a;
+  }
 }
 
 
-/* HERO */
-
-.hero{
-    text-align:center;
-
-    width:100%;
-}
-
-.kicker{
-    color:#726b7b;
-
-    font-size:9px;
-
-    font-weight:800;
-
-    letter-spacing:3px;
-
-    margin-bottom:12px;
-}
+/* TITLE */
 
 .title{
-    font-size:43px;
 
-    line-height:.98;
+  font-family:Georgia,serif;
 
-    letter-spacing:-2.4px;
+  font-size:32px;
 
-    font-weight:950;
+  font-weight:700;
 
-    color:#fff;
+  letter-spacing:2px;
 
-    margin-bottom:15px;
-}
+  color:#e5bd35;
 
-.title span{
-    background:
-        linear-gradient(
-            100deg,
-            #ffffff 15%,
-            #e4d9ff 52%,
-            #ffb2db 100%
-        );
-
-    -webkit-background-clip:text;
-    -webkit-text-fill-color:transparent;
-}
-
-.heart{
-    -webkit-text-fill-color:#ff2995 !important;
-
-    color:#ff2995;
-
-    margin-left:3px;
-}
-
-.tagline{
-    max-width:330px;
-
-    margin:auto;
-
-    color:#827b8a;
-
-    font-size:13px;
-
-    line-height:1.7;
+  animation:titleGlow 3s ease-in-out infinite;
 }
 
 
-/* MEMBERSHIP */
+/* TITLE GLOW */
 
-.membership{
-    width:100%;
+@keyframes titleGlow{
 
-    margin-top:32px;
+  0%,100%{
 
-    padding:24px 20px 21px;
+    text-shadow:
+      0 0 5px rgba(230,190,45,.15);
 
-    border-radius:27px;
+  }
 
-    background:
-        linear-gradient(
-            145deg,
-            rgba(255,255,255,.065),
-            rgba(255,255,255,.018)
-        );
+  50%{
 
-    border:1px solid rgba(255,255,255,.085);
+    text-shadow:
+      0 0 10px rgba(230,190,45,.55),
+      0 0 25px rgba(230,190,45,.25);
 
-    box-shadow:
-        0 30px 90px rgba(0,0,0,.52),
-        inset 0 1px rgba(255,255,255,.045);
-
-    backdrop-filter:blur(25px);
-
-    position:relative;
-
-    overflow:hidden;
-}
-
-.membership::before{
-    content:"";
-
-    position:absolute;
-
-    width:240px;
-    height:240px;
-
-    top:-160px;
-    left:50%;
-
-    transform:translateX(-50%);
-
-    background:
-        radial-gradient(
-            circle,
-            rgba(120,54,255,.16),
-            transparent 70%
-        );
-
-    filter:blur(20px);
-}
-
-.membership-top{
-    position:relative;
-
-    display:flex;
-
-    align-items:center;
-
-    justify-content:space-between;
-
-    margin-bottom:22px;
-}
-
-.membership-title{
-    text-align:left;
-}
-
-.membership-title small{
-    display:block;
-
-    color:#6c6574;
-
-    font-size:8px;
-
-    font-weight:800;
-
-    letter-spacing:1.8px;
-
-    margin-bottom:6px;
-}
-
-.membership-title strong{
-    color:#eeeaf2;
-
-    font-size:16px;
-
-    font-weight:900;
-}
-
-.live{
-    padding:7px 10px;
-
-    border-radius:50px;
-
-    color:#ff79ba;
-
-    background:rgba(255,38,148,.055);
-
-    border:1px solid rgba(255,38,148,.12);
-
-    font-size:8px;
-
-    font-weight:900;
+  }
 }
 
 
-/* BENEFITS */
+/* DIVIDER */
 
-.benefits{
-    position:relative;
+.divider{
 
-    display:grid;
+  width:150px;
+  height:5px;
 
-    grid-template-columns:1fr 1fr;
+  margin:28px auto 28px;
 
-    gap:9px;
+  border-radius:20px;
 
-    margin-bottom:18px;
-}
+  background:#c8a92d;
 
-.benefit{
-    min-height:70px;
-
-    padding:13px;
-
-    text-align:left;
-
-    border-radius:16px;
-
-    background:rgba(255,255,255,.025);
-
-    border:1px solid rgba(255,255,255,.055);
-}
-
-.benefit-icon{
-    font-size:14px;
-
-    margin-bottom:7px;
-}
-
-.benefit-title{
-    color:#dcd6e4;
-
-    font-size:10px;
-
-    font-weight:800;
-
-    margin-bottom:3px;
-}
-
-.benefit-text{
-    color:#67616f;
-
-    font-size:8px;
-
-    line-height:1.4;
 }
 
 
-/* CTA */
+/* HEADING */
+
+.heading{
+
+  font-size:21px;
+
+  font-weight:800;
+
+  color:white;
+
+  margin-bottom:22px;
+
+}
+
+
+/* SUBTITLE */
+
+.subtitle{
+
+  font-size:17px;
+
+  font-weight:600;
+
+  color:#9eaea5;
+
+  margin-bottom:48px;
+
+}
+
+
+/* JOIN BUTTON */
 
 .join{
-    position:relative;
 
-    display:flex;
+  width:100%;
 
-    align-items:center;
+  min-height:70px;
 
-    justify-content:center;
+  display:flex;
 
-    width:100%;
+  align-items:center;
+  justify-content:center;
 
-    height:67px;
+  gap:13px;
 
-    border-radius:18px;
+  padding:15px;
 
-    text-decoration:none;
+  text-decoration:none;
 
-    color:#fff;
+  border-radius:16px;
 
-    background:
-        linear-gradient(
-            100deg,
-            #6532f2,
-            #963cff 48%,
-            #ff2994
-        );
+  background:#056a31;
 
-    border:1px solid rgba(255,255,255,.14);
+  border:1px solid rgba(0,190,80,.55);
+
+  color:white;
+
+  font-size:20px;
+
+  font-weight:800;
+
+  letter-spacing:1px;
+
+  box-shadow:
+    0 8px 22px rgba(0,100,45,.25);
+
+  animation:buttonNeon 2s ease-in-out infinite;
+
+  transition:.2s ease;
+
+}
+
+
+/* BUTTON NEON */
+
+@keyframes buttonNeon{
+
+  0%,100%{
 
     box-shadow:
-        0 17px 45px rgba(103,49,242,.24),
-        0 0 35px rgba(255,41,148,.10);
+      0 8px 22px rgba(0,100,45,.25);
 
-    overflow:hidden;
+  }
 
-    transition:.25s ease;
-}
-
-.join::after{
-    content:"";
-
-    position:absolute;
-
-    top:0;
-    left:-120%;
-
-    width:60%;
-    height:100%;
-
-    background:
-        linear-gradient(
-            90deg,
-            transparent,
-            rgba(255,255,255,.3),
-            transparent
-        );
-
-    transform:skewX(-25deg);
-
-    animation:shine 3.5s infinite;
-}
-
-@keyframes shine{
-
-    0%{
-        left:-120%;
-    }
-
-    45%,100%{
-        left:150%;
-    }
-}
-
-.join:hover{
-    transform:translateY(-3px);
+  50%{
 
     box-shadow:
-        0 22px 55px rgba(103,49,242,.30),
-        0 0 45px rgba(255,41,148,.15);
+      0 8px 30px rgba(0,150,65,.50),
+      0 0 22px rgba(0,150,65,.25);
+
+  }
 }
 
-.join:active{
-    transform:scale(.985);
-}
 
-.join-content{
-    position:relative;
-    z-index:2;
-
-    display:flex;
-    align-items:center;
-
-    gap:10px;
-
-    font-size:16px;
-    font-weight:900;
-}
+/* TELEGRAM */
 
 .telegram{
-    width:27px;
-    height:27px;
 
-    border-radius:50%;
+  width:35px;
+  height:35px;
 
-    display:flex;
-    align-items:center;
-    justify-content:center;
+  border-radius:50%;
 
-    background:rgba(255,255,255,.15);
+  background:white;
 
-    font-size:13px;
+  color:#08763b;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  font-size:19px;
+  font-weight:900;
+
 }
 
 
-/* UNDER CTA */
+/* ARROW */
 
-.open-note{
-    margin-top:10px;
+.arrow{
 
-    color:#5d5764;
+  color:#e3b92f;
 
-    font-size:9px;
-}
+  font-size:24px;
 
-.open-note b{
-    color:#ff3097;
-
-    font-weight:800;
 }
 
 
-/* BOTTOM */
+/* NOTE */
 
-.bottom{
-    margin-top:28px;
+.note{
 
-    display:flex;
-    align-items:center;
-    gap:9px;
+  margin-top:24px;
 
-    color:#4c4652;
+  font-size:13px;
 
-    font-size:8px;
+  font-weight:600;
 
-    font-weight:700;
+  color:#87978e;
 
-    letter-spacing:1.2px;
 }
 
-.line{
-    width:24px;
-    height:1px;
 
-    background:rgba(255,255,255,.08);
-}
+/* FOOTER */
 
 .footer{
-    margin-top:auto;
 
-    padding-top:25px;
+  margin-top:40px;
 
-    color:#302c34;
+  padding-top:24px;
 
-    font-size:8px;
+  border-top:1px solid rgba(150,160,50,.18);
 
-    letter-spacing:.8px;
+  color:#65736c;
+
+  font-size:11px;
+
+  letter-spacing:2px;
+
 }
 
 
@@ -655,31 +375,40 @@ body{
 
 @media(max-width:380px){
 
-    .page{
-        padding:23px 14px;
-    }
+  body{
+    padding:12px;
+  }
 
-    .top{
-        margin-bottom:32px;
-    }
+  .card{
+    padding:45px 20px 30px;
+    border-radius:28px;
+  }
 
-    .logo-stage{
-        width:108px;
-        height:108px;
-    }
+  .logo{
+    width:125px;
+    height:125px;
+  }
 
-    .title{
-        font-size:37px;
-    }
+  .logo span{
+    font-size:36px;
+  }
 
-    .membership{
-        padding:20px 16px;
-        border-radius:23px;
-    }
+  .title{
+    font-size:27px;
+  }
 
-    .join{
-        height:62px;
-    }
+  .heading{
+    font-size:19px;
+  }
+
+  .subtitle{
+    font-size:15px;
+    margin-bottom:40px;
+  }
+
+  .join{
+    font-size:17px;
+  }
 
 }
 
@@ -691,233 +420,61 @@ body{
 <body>
 
 
-<div class="bg">
+<div class="card">
 
-    <div class="orb orb1"></div>
-    <div class="orb orb2"></div>
-    <div class="orb orb3"></div>
 
-</div>
+  <div class="logo">
+    <span>DG</span>
+  </div>
 
 
-<div class="page">
+  <div class="title">
+    DG PREDICTION HUB
+  </div>
 
 
-    <!-- TOP -->
+  <div class="divider"></div>
 
-    <div class="top">
 
-        <div class="brand-mini">
-            MC / 2026
-        </div>
+  <div class="heading">
+    Join To Get Premium Access
+  </div>
 
-        <div class="menu-dot">
-            •••
-        </div>
 
-    </div>
+  <div class="subtitle">
+    Get Daily Exclusive Insights ✨
+  </div>
 
 
-    <!-- LOGO -->
+  <a
+    href="https://t.me/+kX0O6mGTDaQ5MTU1"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="join"
+    id="telegramBtn"
+  >
 
-    <div class="logo-stage">
+    <span class="telegram">➤</span>
 
-        <div class="logo-border">
+    JOIN TELEGRAM
 
-            <img
-                src="./2f96e9f5-836c-40eb-9170-1567b225c8f9.png"
-                alt="Muskan Club"
-                class="logo"
-            >
+    <span class="arrow">➤</span>
 
-        </div>
+  </a>
 
-    </div>
 
+  <div class="note">
+    Tap to open Telegram and join instantly
+  </div>
 
-    <!-- HERO -->
 
-    <section class="hero">
-
-        <div class="kicker">
-            WELCOME TO
-        </div>
-
-        <h1 class="title">
-
-            <span>MUSKAN CLUB</span>
-
-            <i class="heart">♥</i>
-
-        </h1>
-
-        <p class="tagline">
-
-            Your place to connect, discover
-            and stay close to the community.
-
-        </p>
-
-    </section>
-
-
-    <!-- MEMBERSHIP -->
-
-    <section class="membership">
-
-
-        <div class="membership-top">
-
-            <div class="membership-title">
-
-                <small>COMMUNITY ACCESS</small>
-
-                <strong>Muskan Club Members</strong>
-
-            </div>
-
-
-            <div class="live">
-                ● LIVE
-            </div>
-
-        </div>
-
-
-        <!-- BENEFITS -->
-
-        <div class="benefits">
-
-
-            <div class="benefit">
-
-                <div class="benefit-icon">
-                    ✦
-                </div>
-
-                <div class="benefit-title">
-                    Exclusive Access
-                </div>
-
-                <div class="benefit-text">
-                    Stay connected with the community.
-                </div>
-
-            </div>
-
-
-            <div class="benefit">
-
-                <div class="benefit-icon">
-                    ⚡
-                </div>
-
-                <div class="benefit-title">
-                    Fresh Updates
-                </div>
-
-                <div class="benefit-text">
-                    Get the latest community updates.
-                </div>
-
-            </div>
-
-
-            <div class="benefit">
-
-                <div class="benefit-icon">
-                    ◉
-                </div>
-
-                <div class="benefit-title">
-                    Active Members
-                </div>
-
-                <div class="benefit-text">
-                    Be part of a growing community.
-                </div>
-
-            </div>
-
-
-            <div class="benefit">
-
-                <div class="benefit-icon">
-                    ♢
-                </div>
-
-                <div class="benefit-title">
-                    Simple Access
-                </div>
-
-                <div class="benefit-text">
-                    Join directly through Telegram.
-                </div>
-
-            </div>
-
-
-        </div>
-
-
-        <!-- CTA -->
-
-        <a
-            id="telegramBtn"
-            class="join"
-            href="https://t.me/+kX0O6mGTDaQ5MTU1"
-            target="_blank"
-            rel="noopener noreferrer"
-        >
-
-            <span class="join-content">
-
-                <span class="telegram">
-                    ✈
-                </span>
-
-                JOIN TELEGRAM
-
-            </span>
-
-        </a>
-
-
-        <div class="open-note">
-
-            <b>●</b>
-            Opens Telegram in a new tab
-
-        </div>
-
-
-    </section>
-
-
-    <!-- BOTTOM -->
-
-    <div class="bottom">
-
-        <span class="line"></span>
-
-        PRIVATE • SIMPLE • CONNECTED
-
-        <span class="line"></span>
-
-    </div>
-
-
-    <div class="footer">
-
-        © 2026 MUSKAN CLUB ❤️
-
-    </div>
+  <div class="footer">
+    DG PREDICTION HUB • PREMIUM COMMUNITY
+  </div>
 
 
 </div>
 
-
-<!-- SUBSCRIBE EVENT -->
 
 <script>
 
@@ -925,11 +482,11 @@ document
 .getElementById("telegramBtn")
 .addEventListener("click",function(){
 
-    if(typeof fbq === "function"){
+  if(typeof fbq === "function"){
 
-        fbq("track","Subscribe");
+    fbq("track","Subscribe");
 
-    }
+  }
 
 });
 
@@ -937,4 +494,4 @@ document
 
 
 </body>
-     </html>
+    </html>
