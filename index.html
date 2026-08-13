@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>𝗠𝘂𝘀𝗸𝗮𝗻 𝗖𝗹𝘂𝗯❤️</title>
+
+<meta name="description" content="Join Muskan Club on Telegram.">
 
 <style>
 
@@ -14,31 +17,38 @@
     box-sizing:border-box;
 }
 
+html{
+    scroll-behavior:smooth;
+}
+
 body{
     min-height:100vh;
-    font-family:Arial,Helvetica,sans-serif;
     background:#050505;
     color:#fff;
+    font-family:Arial,Helvetica,sans-serif;
     display:flex;
     justify-content:center;
     overflow-x:hidden;
 }
 
-/* GOLD GLOW */
+
+/* BACKGROUND */
 
 body::before{
     content:"";
     position:fixed;
     width:420px;
     height:420px;
-    top:-180px;
-    left:-170px;
+    top:-210px;
+    left:-190px;
+
     background:radial-gradient(
         circle,
-        rgba(255,190,40,.16),
-        transparent 70%
+        rgba(212,163,55,.16),
+        transparent 68%
     );
-    filter:blur(30px);
+
+    filter:blur(25px);
     pointer-events:none;
 }
 
@@ -47,14 +57,16 @@ body::after{
     position:fixed;
     width:420px;
     height:420px;
-    bottom:-200px;
-    right:-160px;
+    bottom:-230px;
+    right:-190px;
+
     background:radial-gradient(
         circle,
-        rgba(255,150,20,.12),
-        transparent 70%
+        rgba(212,163,55,.10),
+        transparent 68%
     );
-    filter:blur(30px);
+
+    filter:blur(25px);
     pointer-events:none;
 }
 
@@ -63,51 +75,57 @@ body::after{
 
 .container{
     width:100%;
-    max-width:500px;
-    padding:32px 20px 35px;
+    max-width:480px;
+
+    padding:34px 18px 30px;
+
     text-align:center;
+
     position:relative;
     z-index:2;
 }
 
 
-/* LIVE BADGE */
+/* TOP BADGE */
 
-.live-badge{
+.badge{
     display:inline-flex;
     align-items:center;
     gap:7px;
 
-    padding:8px 16px;
+    padding:7px 14px;
 
     border-radius:50px;
 
-    background:rgba(255,190,40,.07);
+    background:rgba(212,163,55,.055);
 
-    border:1px solid rgba(255,190,40,.25);
+    border:1px solid rgba(212,163,55,.22);
 
-    color:#f7d77b;
+    color:#d9b75b;
 
-    font-size:12px;
-    font-weight:bold;
+    font-size:11px;
+    font-weight:800;
 
-    margin-bottom:22px;
+    letter-spacing:.7px;
+
+    margin-bottom:19px;
 }
 
-.live-dot{
-    width:7px;
-    height:7px;
+.badge-dot{
+    width:6px;
+    height:6px;
 
     border-radius:50%;
 
-    background:#ffc52e;
+    background:#d8ad42;
 
-    box-shadow:0 0 12px rgba(255,197,46,.8);
+    box-shadow:0 0 10px rgba(216,173,66,.75);
 
-    animation:pulse 1.4s infinite;
+    animation:pulse 1.6s infinite;
 }
 
 @keyframes pulse{
+
     0%,100%{
         opacity:1;
         transform:scale(1);
@@ -115,62 +133,278 @@ body::after{
 
     50%{
         opacity:.45;
-        transform:scale(.75);
+        transform:scale(.72);
     }
+
 }
 
 
 /* LOGO */
 
+.logo-wrap{
+    width:88px;
+    height:88px;
+
+    margin:0 auto 17px;
+
+    padding:3px;
+
+    border-radius:50%;
+
+    background:linear-gradient(
+        145deg,
+        #f0cf72,
+        #9b701d
+    );
+
+    box-shadow:
+        0 0 15px rgba(214,170,65,.22),
+        0 0 35px rgba(214,170,65,.08);
+}
+
 .logo{
-    width:145px;
-    height:145px;
+    width:100%;
+    height:100%;
+
+    display:block;
 
     object-fit:cover;
 
     border-radius:50%;
 
-    margin:0 auto 20px;
-
-    border:2px solid #dcae3d;
-
-    box-shadow:
-        0 0 18px rgba(255,190,40,.35),
-        0 0 55px rgba(255,190,40,.13);
+    background:#111;
 }
 
 
-/* NAME */
+/* TITLE */
 
 h1{
-    font-size:34px;
+    font-size:32px;
+
     line-height:1.15;
 
     font-weight:900;
 
-    margin-bottom:12px;
+    letter-spacing:-.7px;
 
-    letter-spacing:-.5px;
+    margin-bottom:10px;
+
+    color:#fff;
+}
+
+h1::first-letter{
+    color:#fff;
+}
+
+
+/* HEART */
+
+.heart{
+    color:#ff3b6b;
 
     text-shadow:
-        0 0 20px rgba(255,190,40,.12);
+        0 0 12px rgba(255,59,107,.35);
 }
 
 
 /* SUBTITLE */
 
 .subtitle{
-    color:#aaa;
+    max-width:360px;
 
-    font-size:14px;
+    margin:0 auto 24px;
+
+    color:#929292;
+
+    font-size:13px;
 
     line-height:1.6;
-
-    margin-bottom:25px;
 }
 
 
-/* JOIN BUTTON */
+/* MAIN CARD */
+
+.card{
+    position:relative;
+
+    padding:20px 17px;
+
+    border-radius:20px;
+
+    background:linear-gradient(
+        145deg,
+        rgba(255,255,255,.045),
+        rgba(255,255,255,.018)
+    );
+
+    border:1px solid rgba(255,255,255,.075);
+
+    box-shadow:
+        0 18px 50px rgba(0,0,0,.35),
+        inset 0 1px rgba(255,255,255,.045);
+
+    overflow:hidden;
+
+    margin-bottom:15px;
+}
+
+
+/* GOLD LINE */
+
+.card::before{
+    content:"";
+
+    position:absolute;
+
+    top:0;
+    left:15%;
+
+    width:70%;
+    height:1px;
+
+    background:linear-gradient(
+        90deg,
+        transparent,
+        rgba(220,174,65,.55),
+        transparent
+    );
+}
+
+
+/* COMMUNITY ROW */
+
+.community{
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    text-align:left;
+}
+
+.community-left{
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+}
+
+.community-icon{
+    width:42px;
+    height:42px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    border-radius:13px;
+
+    background:rgba(212,163,55,.07);
+
+    border:1px solid rgba(212,163,55,.17);
+
+    font-size:19px;
+}
+
+.community-label{
+    color:#777;
+
+    font-size:10px;
+
+    letter-spacing:.6px;
+
+    margin-bottom:4px;
+}
+
+.community-title{
+    color:#eee;
+
+    font-size:14px;
+
+    font-weight:800;
+}
+
+.status{
+    color:#d7b456;
+
+    font-size:10px;
+
+    font-weight:800;
+
+    padding:6px 9px;
+
+    border-radius:30px;
+
+    background:rgba(212,163,55,.06);
+
+    border:1px solid rgba(212,163,55,.15);
+}
+
+
+/* FEATURES */
+
+.features{
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:10px;
+
+    margin-bottom:17px;
+}
+
+.feature{
+    text-align:left;
+
+    padding:16px 13px;
+
+    min-height:105px;
+
+    border-radius:17px;
+
+    background:rgba(255,255,255,.025);
+
+    border:1px solid rgba(255,255,255,.065);
+
+    transition:.25s ease;
+}
+
+.feature:hover{
+    transform:translateY(-2px);
+
+    border-color:rgba(212,163,55,.22);
+
+    background:rgba(212,163,55,.035);
+}
+
+.feature-icon{
+    font-size:18px;
+
+    margin-bottom:9px;
+}
+
+.feature-title{
+    font-size:13px;
+
+    font-weight:800;
+
+    margin-bottom:5px;
+
+    color:#eee;
+}
+
+.feature-text{
+    color:#6f7271;
+
+    font-size:10px;
+
+    line-height:1.45;
+}
+
+
+/* TELEGRAM BUTTON */
 
 .join-btn{
     position:relative;
@@ -178,6 +412,7 @@ h1{
     display:flex;
 
     align-items:center;
+
     justify-content:center;
 
     width:100%;
@@ -190,29 +425,28 @@ h1{
 
     text-decoration:none;
 
-    color:#080600;
+    color:#080705;
 
     background:linear-gradient(
         135deg,
-        #ffe08a,
-        #d89b18
+        #f2d27a,
+        #d39d2f
     );
 
-    font-size:17px;
+    font-size:16px;
 
     font-weight:900;
 
+    letter-spacing:.1px;
+
     box-shadow:
-        0 0 20px rgba(255,190,40,.22),
-        0 12px 35px rgba(255,190,40,.10);
+        0 0 18px rgba(212,163,55,.20),
+        0 12px 35px rgba(0,0,0,.28);
 
     overflow:hidden;
 
     transition:.25s ease;
-
-    margin-bottom:12px;
 }
-
 
 .join-btn::before{
     content:"";
@@ -222,16 +456,15 @@ h1{
     top:0;
     left:-100%;
 
-    width:60%;
+    width:55%;
     height:100%;
 
-    background:rgba(255,255,255,.35);
+    background:rgba(255,255,255,.32);
 
     transform:skewX(-25deg);
 
-    animation:shine 3s infinite;
+    animation:shine 3.2s infinite;
 }
-
 
 @keyframes shine{
 
@@ -240,146 +473,54 @@ h1{
     }
 
     45%,100%{
-        left:140%;
+        left:145%;
     }
 
 }
 
+.join-btn span{
+    position:relative;
+    z-index:2;
+}
 
 .join-btn:hover{
     transform:translateY(-2px);
 
     box-shadow:
-        0 0 30px rgba(255,190,40,.35),
-        0 15px 45px rgba(255,190,40,.14);
+        0 0 28px rgba(212,163,55,.28),
+        0 15px 40px rgba(0,0,0,.30);
 }
-
 
 .join-btn:active{
     transform:scale(.98);
 }
 
 
-/* SMALL NOTE */
+/* NOTE */
 
-.telegram-note{
-    font-size:12px;
+.note{
+    margin-top:10px;
 
-    color:#777;
+    color:#656565;
 
-    margin-bottom:24px;
+    font-size:10px;
 }
 
-.telegram-note span{
-    color:#e4b73c;
+.note-dot{
+    color:#d6ad4b;
 
-    text-shadow:
-        0 0 10px rgba(255,190,40,.6);
-}
-
-
-/* FEATURES */
-
-.features{
-    display:grid;
-
-    grid-template-columns:1fr 1fr;
-
-    gap:11px;
-
-    margin-bottom:24px;
-}
-
-
-.feature{
-    min-height:120px;
-
-    padding:18px 12px;
-
-    border-radius:17px;
-
-    background:rgba(255,255,255,.035);
-
-    border:1px solid rgba(255,255,255,.08);
-
-    box-shadow:
-        0 10px 30px rgba(0,0,0,.28),
-        inset 0 1px rgba(255,255,255,.04);
-
-    transition:.3s ease;
-}
-
-
-.feature:hover{
-    transform:translateY(-3px);
-
-    border-color:rgba(255,190,40,.25);
-
-    box-shadow:
-        0 10px 35px rgba(255,190,40,.08);
-}
-
-
-.feature-icon{
-    font-size:22px;
-
-    margin-bottom:10px;
-
-    color:#f0c34b;
-
-    text-shadow:
-        0 0 12px rgba(255,190,40,.45);
-}
-
-
-.feature-title{
-    font-size:14px;
-
-    font-weight:800;
-
-    margin-bottom:6px;
-}
-
-
-.feature-text{
-    font-size:11px;
-
-    line-height:1.45;
-
-    color:#777d7a;
-}
-
-
-/* SECOND CTA */
-
-.bottom-title{
-    font-size:18px;
-
-    font-weight:900;
-
-    margin-bottom:7px;
-}
-
-
-.bottom-text{
-    color:#777;
-
-    font-size:12px;
-
-    line-height:1.5;
-
-    margin-bottom:15px;
+    margin-right:4px;
 }
 
 
 /* FOOTER */
 
 .footer{
-    margin-top:24px;
+    margin-top:22px;
 
-    color:#4e4e4e;
+    color:#414141;
 
-    font-size:10px;
+    font-size:9px;
 }
 
 
@@ -388,30 +529,31 @@ h1{
 @media(max-width:380px){
 
     .container{
-        padding:27px 15px 30px;
+        padding:28px 14px 25px;
     }
 
-    .logo{
-        width:125px;
-        height:125px;
+    .logo-wrap{
+        width:82px;
+        height:82px;
     }
 
     h1{
-        font-size:30px;
+        font-size:29px;
     }
 
     .subtitle{
-        font-size:13px;
+        font-size:12px;
     }
 
     .feature{
-        min-height:112px;
-        padding:15px 10px;
+        padding:14px 11px;
+        min-height:100px;
     }
 
 }
 
 </style>
+
 </head>
 
 
@@ -420,64 +562,78 @@ h1{
 <div class="container">
 
 
-    <!-- LIVE -->
+    <!-- TOP -->
 
-    <div class="live-badge">
+    <div class="badge">
 
-        <span class="live-dot"></span>
+        <span class="badge-dot"></span>
 
-        LIVE ON TELEGRAM
+        OFFICIAL TELEGRAM COMMUNITY
 
     </div>
 
 
     <!-- LOGO -->
 
-    <img
-        src="IMG_20260813_102516_176.jpg"
-        alt="Muskan Club Logo"
-        class="logo"
-    >
+    <div class="logo-wrap">
+
+        <img
+            src="IMG_20260813_102516_176.jpg"
+            alt="Muskan Club Logo"
+            class="logo"
+        >
+
+    </div>
 
 
     <!-- NAME -->
 
     <h1>
-        𝗠𝘂𝘀𝗸𝗮𝗻 𝗖𝗹𝘂𝗯❤️
+        𝗠𝘂𝘀𝗸𝗮𝗻 𝗖𝗹𝘂𝗯<span class="heart">❤️</span>
     </h1>
 
 
-    <!-- DESCRIPTION -->
+    <!-- SUBTITLE -->
 
     <div class="subtitle">
 
-        Join our Telegram community for
-        entertainment, updates, trending content
-        and more.
+        Join our growing Telegram community
+        and stay connected with the latest updates.
 
     </div>
 
 
-    <!-- FIRST BUTTON -->
+    <!-- COMMUNITY CARD -->
 
-    <a
-        class="join-btn"
-        href="https://t.me/+kX0O6mGTDaQ5MTU1"
-        target="_blank"
-        rel="noopener noreferrer"
-    >
+    <div class="card">
 
-        ➤ JOIN TELEGRAM
+        <div class="community">
 
-    </a>
+            <div class="community-left">
 
+                <div class="community-icon">
+                    ✦
+                </div>
 
-    <!-- NOTE -->
+                <div>
 
-    <div class="telegram-note">
+                    <div class="community-label">
+                        COMMUNITY
+                    </div>
 
-        <span>●</span>
-        Opens Telegram in a new tab
+                    <div class="community-title">
+                        Muskan Club Community
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="status">
+                ● ACTIVE
+            </div>
+
+        </div>
 
     </div>
 
@@ -494,11 +650,11 @@ h1{
             </div>
 
             <div class="feature-title">
-                Fast Updates
+                Regular Updates
             </div>
 
             <div class="feature-text">
-                Get the latest updates and trending content.
+                Stay updated with fresh community content.
             </div>
 
         </div>
@@ -515,7 +671,7 @@ h1{
             </div>
 
             <div class="feature-text">
-                Stay connected with our growing community.
+                Connect with an active growing community.
             </div>
 
         </div>
@@ -532,7 +688,7 @@ h1{
             </div>
 
             <div class="feature-text">
-                Clean and easy community experience.
+                Simple, clean and easy Telegram experience.
             </div>
 
         </div>
@@ -541,7 +697,7 @@ h1{
         <div class="feature">
 
             <div class="feature-icon">
-                🛡️
+                🔒
             </div>
 
             <div class="feature-title">
@@ -549,7 +705,7 @@ h1{
             </div>
 
             <div class="feature-text">
-                Join directly through Telegram in one tap.
+                Join directly through Telegram.
             </div>
 
         </div>
@@ -558,19 +714,7 @@ h1{
     </div>
 
 
-    <!-- BOTTOM -->
-
-    <div class="bottom-title">
-        Ready to Join?
-    </div>
-
-
-    <div class="bottom-text">
-        Join the Muskan Club community today.
-    </div>
-
-
-    <!-- SECOND BUTTON -->
+    <!-- ONE BUTTON ONLY -->
 
     <a
         class="join-btn"
@@ -579,10 +723,23 @@ h1{
         rel="noopener noreferrer"
     >
 
-        🚀 JOIN NOW
+        <span>✈️ JOIN MUSKAN CLUB ON TELEGRAM</span>
 
     </a>
 
+
+    <!-- NOTE -->
+
+    <div class="note">
+
+        <span class="note-dot">●</span>
+
+        Opens Telegram in a new tab
+
+    </div>
+
+
+    <!-- FOOTER -->
 
     <div class="footer">
 
@@ -594,4 +751,4 @@ h1{
 </div>
 
 </body>
-  </html>
+</html>
