@@ -1,1232 +1,364 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>DG PREDICTION HUB</title>
-
-
-<!-- =========================
-     META PIXEL CODE
-========================= -->
-
-<script>
+<head>\<!-- Meta Pixel Code -->
+\<script>
 !function(f,b,e,v,n,t,s)
-{
-  if(f.fbq)return;
-
-  n=f.fbq=function(){
-    n.callMethod ?
-    n.callMethod.apply(n,arguments) :
-    n.queue.push(arguments)
-  };
-
-  if(!f._fbq)f._fbq=n;
-
-  n.push=n;
-  n.loaded=!0;
-  n.version='2.0';
-  n.queue=[];
-
-  t=b.createElement(e);
-  t.async=!0;
-  t.src=v;
-
-  s=b.getElementsByTagName(e)[0];
-  s.parentNode.insertBefore(t,s)
-
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments)\:n.queue.push(arguments)};
+if(!f.\_fbq)f.\_fbq=n;
+n.push=n;
+n.loaded=!0;
+n.version='2.0';
+n.queue=[];
+t=b.createElement(e);
+t.async=!0;
+t.src=v;
+s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)
 }(window, document, 'script',
-'https://connect.facebook.net/en_US/fbevents.js');
+'[https://connect.facebook.net/en\_US/fbevents.js](https://connect.facebook.net/en_US/fbevents.js)');
 
 fbq('init', '1734610900989359');
 fbq('track', 'PageView');
-</script>
+\</script>
 
-
-<noscript>
-<img
+\<noscript>
+\<img
 height="1"
 width="1"
-style="display:none"
-src="https://www.facebook.com/tr?id=1734610900989359&ev=PageView&noscript=1"
+style="display\:none"
+src="[https://www.facebook.com/tr?id=1734610900989359&ev=PageView&noscript=1](https://www.facebook.com/tr?id=1734610900989359\&ev=PageView\&noscript=1)"
 />
-</noscript>
-
-
-<!-- End Meta Pixel Code -->
-
-
-<style>
-
-/* =========================
-   RESET
-========================= */
-
-*{
-  box-sizing:border-box;
-}
-
-
-/* =========================
-   BODY
-========================= */
-
-html{
-  scroll-behavior:smooth;
-}
-
-body{
-  margin:0;
-  min-height:100vh;
-
-  display:flex;
-  justify-content:center;
-  align-items:center;
-
-  padding:20px;
-
-  font-family:Arial,Helvetica,sans-serif;
-
-  color:white;
-
-  background:
-    radial-gradient(
-      circle at 50% 20%,
-      rgba(0,255,120,.12),
-      transparent 35%
-    ),
-    radial-gradient(
-      circle at 20% 80%,
-      rgba(0,180,255,.08),
-      transparent 35%
-    ),
-    #030505;
-
-  overflow:hidden;
-
-  position:relative;
-}
-
-
-/* =========================
-   BACKGROUND GLOW
-========================= */
-
-body::before{
-  content:"";
-
-  position:fixed;
-
-  width:420px;
-  height:420px;
-
-  border-radius:50%;
-
-  background:rgba(0,255,100,.07);
-
-  filter:blur(80px);
-
-  top:-180px;
-  left:-150px;
-
-  animation:moveGlow 7s ease-in-out infinite alternate;
-
-  pointer-events:none;
-}
-
-body::after{
-  content:"";
-
-  position:fixed;
-
-  width:400px;
-  height:400px;
-
-  border-radius:50%;
-
-  background:rgba(0,200,255,.06);
-
-  filter:blur(90px);
-
-  bottom:-180px;
-  right:-150px;
-
-  animation:moveGlow2 8s ease-in-out infinite alternate;
-
-  pointer-events:none;
-}
-
-@keyframes moveGlow{
-
-  from{
-    transform:translate(0,0);
-  }
-
-  to{
-    transform:translate(180px,120px);
-  }
-
-}
-
-@keyframes moveGlow2{
-
-  from{
-    transform:translate(0,0);
-  }
-
-  to{
-    transform:translate(-150px,-100px);
-  }
-
-}
-
-
-/* =========================
-   PARTICLES
-========================= */
-
-.particles{
-
-  position:fixed;
-
-  inset:0;
-
-  pointer-events:none;
-
-  overflow:hidden;
-
-  z-index:0;
-
-}
-
-.particles span{
-
-  position:absolute;
-
-  width:4px;
-  height:4px;
-
-  background:#00ff88;
-
-  border-radius:50%;
-
-  box-shadow:
-    0 0 6px #00ff88,
-    0 0 14px #00ff88;
-
-  opacity:.7;
-
-  animation:floatParticle linear infinite;
-
-}
-
-.particles span:nth-child(1){
-  left:8%;
-  animation-duration:7s;
-  animation-delay:1s;
-}
-
-.particles span:nth-child(2){
-  left:18%;
-  animation-duration:10s;
-  animation-delay:2s;
-}
-
-.particles span:nth-child(3){
-  left:30%;
-  animation-duration:8s;
-  animation-delay:3s;
-}
-
-.particles span:nth-child(4){
-  left:45%;
-  animation-duration:11s;
-}
-
-.particles span:nth-child(5){
-  left:58%;
-  animation-duration:9s;
-  animation-delay:2s;
-}
-
-.particles span:nth-child(6){
-  left:70%;
-  animation-duration:12s;
-  animation-delay:1s;
-}
-
-.particles span:nth-child(7){
-  left:82%;
-  animation-duration:8s;
-  animation-delay:4s;
-}
-
-.particles span:nth-child(8){
-  left:93%;
-  animation-duration:10s;
-  animation-delay:2s;
-}
-
-@keyframes floatParticle{
-
-  0%{
-    bottom:-10px;
-    transform:translateX(0) scale(.5);
-    opacity:0;
-  }
-
-  15%{
-    opacity:.8;
-  }
-
-  50%{
-    transform:translateX(30px) scale(1);
-  }
-
-  85%{
-    opacity:.7;
-  }
-
-  100%{
-    bottom:110%;
-    transform:translateX(-30px) scale(.3);
-    opacity:0;
-  }
-
-}
-
-
-/* =========================
-   MAIN CARD
-========================= */
-
-.card{
-
-  width:100%;
-  max-width:430px;
-
-  padding:38px 25px 25px;
-
-  text-align:center;
-
-  position:relative;
-
-  z-index:2;
-
-  background:
-    linear-gradient(
-      145deg,
-      rgba(255,255,255,.07),
-      rgba(255,255,255,.025)
-    );
-
-  border:1px solid rgba(0,255,120,.28);
-
-  border-radius:24px;
-
-  box-shadow:
-    0 0 15px rgba(0,255,100,.12),
-    0 0 45px rgba(0,255,100,.07),
-    inset 0 0 25px rgba(0,255,100,.025);
-
-  backdrop-filter:blur(16px);
-
-  -webkit-backdrop-filter:blur(16px);
-
-  animation:cardGlow 3s ease-in-out infinite alternate;
-
-}
-
-
-@keyframes cardGlow{
-
-  from{
-
-    box-shadow:
-      0 0 15px rgba(0,255,100,.12),
-      0 0 45px rgba(0,255,100,.06),
-      inset 0 0 20px rgba(0,255,100,.02);
-
-  }
-
-  to{
-
-    box-shadow:
-      0 0 25px rgba(0,255,100,.22),
-      0 0 65px rgba(0,255,100,.10),
-      inset 0 0 30px rgba(0,255,100,.04);
-
-  }
-
-}
-
-
-/* =========================
-   TOP NEON LINE
-========================= */
-
-.card::before{
-
-  content:"";
-
-  position:absolute;
-
-  top:0;
-  left:15%;
-
-  width:70%;
-  height:2px;
-
-  border-radius:50%;
-
-  background:#00ff88;
-
-  box-shadow:
-    0 0 5px #00ff88,
-    0 0 15px #00ff88,
-    0 0 30px #00ff88;
-
-  animation:topLine 2s ease-in-out infinite alternate;
-
-}
-
-@keyframes topLine{
-
-  from{
-    opacity:.45;
-    transform:scaleX(.7);
-  }
-
-  to{
-    opacity:1;
-    transform:scaleX(1);
-  }
-
-}
-
-
-/* =========================
-   LOGO
-========================= */
-
-.logo{
-  margin-bottom:12px;
-}
-
-.logo span{
-
-  display:inline-flex;
-
-  justify-content:center;
-  align-items:center;
-
-  width:72px;
-  height:72px;
-
-  font-size:36px;
-
-  font-weight:900;
-
-  color:#00ff88;
-
-  border:2px solid #00ff88;
-
-  border-radius:50%;
-
-  background:rgba(0,255,100,.05);
-
-  text-shadow:
-    0 0 5px #00ff88,
-    0 0 15px #00ff88,
-    0 0 30px #00ff88;
-
-  box-shadow:
-    0 0 8px rgba(0,255,120,.6),
-    0 0 20px rgba(0,255,120,.35),
-    inset 0 0 15px rgba(0,255,120,.12);
-
-  animation:
-    logoPulse 2s ease-in-out infinite,
-    logoFloat 3s ease-in-out infinite;
-
-}
-
-
-@keyframes logoPulse{
-
-  0%,100%{
-
-    box-shadow:
-      0 0 8px rgba(0,255,120,.5),
-      0 0 20px rgba(0,255,120,.25);
-
-  }
-
-  50%{
-
-    box-shadow:
-      0 0 12px rgba(0,255,120,.8),
-      0 0 35px rgba(0,255,120,.45),
-      0 0 55px rgba(0,255,120,.2);
-
-  }
-
-}
-
-
-@keyframes logoFloat{
-
-  0%,100%{
-    transform:translateY(0);
-  }
-
-  50%{
-    transform:translateY(-5px);
-  }
-
-}
-
-
-/* =========================
-   TITLE
-========================= */
-
-.title{
-
-  font-size:27px;
-
-  font-weight:900;
-
-  letter-spacing:1px;
-
-  color:#ffffff;
-
-  text-shadow:
-    0 0 5px rgba(255,255,255,.4),
-    0 0 15px rgba(0,255,120,.35);
-
-  animation:titleGlow 2.5s ease-in-out infinite alternate;
-
-}
-
-
-@keyframes titleGlow{
-
-  from{
-
-    text-shadow:
-      0 0 5px rgba(255,255,255,.3),
-      0 0 12px rgba(0,255,120,.2);
-
-  }
-
-  to{
-
-    text-shadow:
-      0 0 8px rgba(255,255,255,.5),
-      0 0 22px rgba(0,255,120,.5);
-
-  }
-
-}
-
-
-/* =========================
-   DIVIDER
-========================= */
-
-.divider{
-
-  width:80px;
-
-  height:2px;
-
-  margin:16px auto 22px;
-
-  background:#00ff88;
-
-  box-shadow:
-    0 0 5px #00ff88,
-    0 0 15px #00ff88,
-    0 0 25px #00ff88;
-
-  animation:dividerGlow 2s ease-in-out infinite alternate;
-
-}
-
-
-@keyframes dividerGlow{
-
-  from{
-    width:60px;
-    opacity:.5;
-  }
-
-  to{
-    width:110px;
-    opacity:1;
-  }
-
-}
-
-
-/* =========================
-   HEADING
-========================= */
-
-.heading{
-
-  font-size:19px;
-
-  font-weight:bold;
-
-  color:#ffffff;
-
-  margin-bottom:10px;
-
-}
-
-
-/* =========================
-   SUBTITLE
-========================= */
-
-.subtitle{
-
-  font-size:15px;
-
-  color:#bfc8c4;
-
-  margin-bottom:40px;
-
-}
-
-
-/* =========================
-   JOIN BUTTON
-========================= */
-
-.join{
-
-  position:relative;
-
-  display:flex;
-
-  align-items:center;
-
-  justify-content:center;
-
-  gap:12px;
-
-  width:100%;
-
-  padding:17px 20px;
-
-  color:#001b0d;
-
-  background:#00ff88;
-
-  border-radius:13px;
-
-  text-decoration:none;
-
-  font-size:17px;
-
-  font-weight:900;
-
-  letter-spacing:.5px;
-
-  box-shadow:
-    0 0 8px #00ff88,
-    0 0 20px rgba(0,255,136,.65),
-    0 0 40px rgba(0,255,136,.25);
-
-  overflow:hidden;
-
-  transition:.25s ease;
-
-  animation:buttonPulse 2s ease-in-out infinite;
-
-}
-
-
-.join::before{
-
-  content:"";
-
-  position:absolute;
-
-  top:0;
-
-  left:-120%;
-
-  width:60%;
-
-  height:100%;
-
-  background:
-    linear-gradient(
-      90deg,
-      transparent,
-      rgba(255,255,255,.65),
-      transparent
-    );
-
-  transform:skewX(-20deg);
-
-  animation:buttonShine 2.8s infinite;
-
-}
-
-
-@keyframes buttonShine{
-
-  0%{
-    left:-120%;
-  }
-
-  45%,100%{
-    left:140%;
-  }
-
-}
-
-
-@keyframes buttonPulse{
-
-  0%,100%{
-
-    box-shadow:
-      0 0 8px #00ff88,
-      0 0 20px rgba(0,255,136,.55),
-      0 0 40px rgba(0,255,136,.2);
-
-  }
-
-  50%{
-
-    box-shadow:
-      0 0 12px #00ff88,
-      0 0 30px rgba(0,255,136,.8),
-      0 0 55px rgba(0,255,136,.35);
-
-  }
-
-}
-
-
-.join:hover{
-
-  transform:translateY(-3px) scale(1.02);
-
-  box-shadow:
-    0 0 15px #00ff88,
-    0 0 35px #00ff88,
-    0 0 70px rgba(0,255,136,.45);
-
-}
-
-
-.join:active{
-
-  transform:scale(.97);
-
-}
-
-
-/* =========================
-   BUTTON ICONS
-========================= */
-
-.telegram{
-
-  font-size:22px;
-
-  font-weight:bold;
-
-  position:relative;
-
-  z-index:2;
-
-}
-
-
-.arrow{
-
-  font-size:18px;
-
-  position:relative;
-
-  z-index:2;
-
-  animation:arrowMove 1s ease-in-out infinite;
-
-}
-
-
-@keyframes arrowMove{
-
-  0%,100%{
-    transform:translateX(0);
-  }
-
-  50%{
-    transform:translateX(5px);
-  }
-
-}
-
-
-/* =========================
-   NOTE
-========================= */
-
-.note{
-
-  margin-top:16px;
-
-  font-size:12px;
-
-  color:#7e8984;
-
-}
-
-
-/* =========================
-   WINNING STATUS
-========================= */
-
-.winning{
-
-  margin:25px auto 0;
-
-  display:flex;
-
-  align-items:center;
-
-  justify-content:center;
-
-  gap:10px;
-
-  width:max-content;
-
-  padding:8px 16px;
-
-  border-radius:30px;
-
-  color:#00ff88;
-
-  border:1px solid rgba(0,255,136,.35);
-
-  background:rgba(0,255,136,.05);
-
-  font-size:13px;
-
-  font-weight:bold;
-
-  text-shadow:
-    0 0 8px #00ff88;
-
-  box-shadow:
-    0 0 12px rgba(0,255,136,.15);
-
-  animation:winningPulse 1.7s ease-in-out infinite;
-
-}
-
-
-.winDot{
-
-  width:8px;
-
-  height:8px;
-
-  border-radius:50%;
-
-  background:#00ff88;
-
-  box-shadow:
-    0 0 5px #00ff88,
-    0 0 15px #00ff88;
-
-  animation:dotBlink 1s infinite;
-
-}
-
-
-@keyframes winningPulse{
-
-  0%,100%{
-    transform:scale(1);
-    opacity:.75;
-  }
-
-  50%{
-    transform:scale(1.05);
-    opacity:1;
-  }
-
-}
-
-
-@keyframes dotBlink{
-
-  0%,100%{
-    opacity:.3;
-    transform:scale(.7);
-  }
-
-  50%{
-    opacity:1;
-    transform:scale(1.2);
-  }
-
-}
-
-
-/* =========================
-   WINNING POPUP
-========================= */
-
-.winPopup{
-
-  position:fixed;
-
-  left:50%;
-
-  top:25px;
-
-  transform:
-    translateX(-50%)
-    translateY(-100px);
-
-  z-index:10;
-
-  padding:11px 20px;
-
-  border:1px solid rgba(0,255,136,.6);
-
-  border-radius:12px;
-
-  background:rgba(0,20,12,.9);
-
-  color:#00ff88;
-
-  font-size:14px;
-
-  font-weight:900;
-
-  white-space:nowrap;
-
-  box-shadow:
-    0 0 10px #00ff88,
-    0 0 30px rgba(0,255,136,.45);
-
-  opacity:0;
-
-  animation:winPopup 5s ease-in-out infinite;
-
-}
-
-
-@keyframes winPopup{
-
-  0%,8%{
-
-    opacity:0;
-
-    transform:
-      translateX(-50%)
-      translateY(-100px);
-
-  }
-
-  15%,72%{
-
-    opacity:1;
-
-    transform:
-      translateX(-50%)
-      translateY(0);
-
-  }
-
-  82%,100%{
-
-    opacity:0;
-
-    transform:
-      translateX(-50%)
-      translateY(-100px);
-
-  }
-
-}
-
-
-/* =========================
-   FOOTER
-========================= */
-
-.footer{
-
-  margin-top:28px;
-
-  font-size:10px;
-
-  letter-spacing:1px;
-
-  color:#66716c;
-
-  text-shadow:
-    0 0 8px rgba(0,255,136,.15);
-
-}
-
-
-/* =========================
-   MOBILE
-========================= */
-
-@media(max-width:480px){
-
-  body{
-    padding:15px;
-  }
-
-  .card{
-    padding:32px 20px 22px;
-    border-radius:21px;
-  }
-
-  .logo span{
-
-    font-size:36px;
-
-    width:68px;
-    height:68px;
-
-  }
-
-  .title{
-    font-size:27px;
-  }
-
-  .heading{
-    font-size:19px;
-  }
-
-  .subtitle{
-
-    font-size:15px;
-
-    margin-bottom:40px;
-
-  }
-
-  .join{
-    font-size:17px;
-  }
-
-}
-
-
-/* =========================
-   SMALL MOBILE
-========================= */
-
-@media(max-width:350px){
-
-  .title{
-    font-size:23px;
-  }
-
-  .heading{
-    font-size:17px;
-  }
-
-  .join{
-
-    font-size:15px;
-
-    padding:15px;
-
-  }
-
-}
-
-</style>
-
+\</noscript>
+
+\<!-- End Meta Pixel Code -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DgX Prime - Premium Trading Community</title>
+    <style>
+        :root {
+            --bg-color: #07070b;
+            --card-bg: #10101a;
+            --pink-glow-1: #ff007f;
+            --pink-glow-2: #ff3399;
+            --neon-pink: #ff1493;
+            --white-text: #ffffff;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: radial-gradient(circle at center, #1a0033 0%, var(--bg-color) 70%);
+            color: var(--white-text);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        /* --- WINNING ANIMATIONS & KEYFRAMES --- */
+        @keyframes winningPulse {
+            0% {
+                transform: scale(1);
+                box-shadow: 0 0 20px rgba(255, 0, 127, 0.4), inset 0 0 15px rgba(255, 0, 127, 0.3);
+            }
+            50% {
+                transform: scale(1.05);
+                box-shadow: 0 0 40px rgba(255, 0, 127, 0.8), inset 0 0 25px rgba(255, 0, 127, 0.5);
+            }
+            100% {
+                transform: scale(1);
+                box-shadow: 0 0 20px rgba(255, 0, 127, 0.4), inset 0 0 15px rgba(255, 0, 127, 0.3);
+            }
+        }
+
+        @keyframes floatAnimation {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-8px); }
+            100% { transform: translateY(0px); }
+        }
+
+        @keyframes shimmer {
+            0% { background-position: -200% 0; }
+            100% { background-position: 200% 0; }
+        }
+
+        @keyframes buttonGlow {
+            0% { box-shadow: 0 0 15px rgba(255, 0, 127, 0.5); }
+            50% { box-shadow: 0 0 35px rgba(255, 0, 127, 0.9), 0 0 60px rgba(255, 20, 147, 0.5); }
+            100% { box-shadow: 0 0 15px rgba(255, 0, 127, 0.5); }
+        }
+
+        @keyframes textNeon {
+            0%, 100% {
+                text-shadow: 0 0 10px rgba(255, 0, 127, 0.8), 0 0 20px rgba(255, 0, 127, 0.5), 0 0 30px rgba(255, 0, 127, 0.3);
+            }
+            50% {
+                text-shadow: 0 0 20px rgba(255, 20, 147, 1), 0 0 35px rgba(255, 20, 147, 0.8), 0 0 50px rgba(255, 20, 147, 0.6);
+            }
+        }
+
+        /* --- MAIN CONTAINER --- */
+        .main-container {
+            width: 100%;
+            max-width: 440px;
+            background: var(--card-bg);
+            border-radius: 28px;
+            box-shadow: 0 15px 50px rgba(0, 0, 0, 0.8), 0 0 30px rgba(255, 0, 127, 0.15);
+            padding: 35px 20px;
+            text-align: center;
+            border: 1.5px solid rgba(255, 0, 127, 0.3);
+            box-sizing: border-box;
+            position: relative;
+            backdrop-filter: blur(10px);
+        }
+
+        /* --- HEADER & LIVE WIN BADGE --- */
+        .top-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 25px;
+            padding: 0 5px;
+        }
+
+        .header-text {
+            color: var(--white-text);
+            font-size: 1.1rem;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+        }
+
+        .live-badge {
+            background: rgba(255, 0, 127, 0.15);
+            border: 1px solid var(--pink-glow-1);
+            color: var(--pink-glow-2);
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            animation: floatAnimation 3s ease-in-out infinite;
+        }
+
+        .live-dot {
+            width: 7px;
+            height: 7px;
+            background-color: var(--pink-glow-1);
+            border-radius: 50%;
+            box-shadow: 0 0 8px var(--pink-glow-1);
+        }
+
+        /* --- LOGO SECTION WITH WINNING PULSE --- */
+        .logo-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 35px 0;
+        }
+
+        .logo-circle {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #1a0026 0%, #0d0d15 100%);
+            border: 3px solid var(--pink-glow-1);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2.8rem;
+            font-weight: 900;
+            color: var(--white-text);
+            animation: winningPulse 2.5s infinite ease-in-out;
+            position: relative;
+        }
+
+        .logo-circle span {
+            background: linear-gradient(90deg, #fff, var(--pink-glow-2));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* --- TITLES & TYPOGRAPHY --- */
+        .main-title {
+            color: var(--pink-glow-1);
+            font-size: 2.4rem;
+            font-weight: 900;
+            line-height: 1.15;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            animation: textNeon 3s infinite ease-in-out;
+        }
+
+        .subtitle {
+            font-size: 1.35rem;
+            font-weight: 700;
+            color: #f1f1f1;
+            margin-bottom: 12px;
+        }
+
+        .description {
+            font-size: 0.95rem;
+            color: #b5b5c3;
+            margin-bottom: 30px;
+            line-height: 1.5;
+            padding: 0 10px;
+        }
+
+        /* --- WINNING STATS CARDS --- */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 12px;
+            margin-bottom: 35px;
+        }
+
+        .feature-box {
+            background: linear-gradient(145deg, #151522, #0d0d14);
+            border-radius: 14px;
+            padding: 15px 5px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: 1px solid rgba(255, 0, 127, 0.25);
+            transition: transform 0.3s ease;
+            animation: floatAnimation 4s ease-in-out infinite;
+        }
+
+        .feature-box:nth-child(2) { animation-delay: 1s; }
+        .feature-box:nth-child(3) { animation-delay: 2s; }
+
+        .feature-box:hover {
+            transform: translateY(-5px);
+            border-color: var(--pink-glow-1);
+        }
+
+        .feature-icon {
+            width: 28px;
+            height: 28px;
+            margin-bottom: 8px;
+            filter: drop-shadow(0 0 6px var(--pink-glow-1));
+        }
+
+        .feature-text {
+            font-size: 0.8rem;
+            font-weight: 700;
+            color: #dfdfe6;
+        }
+
+        /* --- HIGH-CONVERTING CTA BUTTON --- */
+        .join-btn-wrapper {
+            margin-bottom: 20px;
+        }
+
+        .join-btn {
+            background: linear-gradient(90deg, var(--pink-glow-1), #ff2a85, var(--pink-glow-2));
+            background-size: 200% auto;
+            color: #fff;
+            font-size: 1.2rem;
+            font-weight: 800;
+            text-decoration: none;
+            padding: 18px 20px;
+            border-radius: 16px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 12px;
+            transition: all 0.3s ease;
+            animation: buttonGlow 2s infinite, shimmer 3s linear infinite;
+            position: relative;
+            overflow: hidden;
+            letter-spacing: 0.5px;
+        }
+
+        .join-btn:hover {
+            transform: scale(1.03);
+            box-shadow: 0 0 50px rgba(255, 0, 127, 0.9);
+        }
+
+        .join-btn img {
+            width: 22px;
+            height: 22px;
+            filter: brightness(0) invert(1);
+        }
+        
+        .arrow-icon {
+            font-size: 1.3rem;
+            transition: transform 0.3s ease;
+        }
+
+        .join-btn:hover .arrow-icon {
+            transform: translateX(5px);
+        }
+
+        /* --- FOOTER INFO --- */
+        .footer-text {
+            font-size: 0.85rem;
+            color: #8c8c9e;
+            margin-bottom: 10px;
+        }
+        
+        .disclaimer-text {
+            font-size: 0.7rem;
+            color: #555566;
+        }
+    </style>
 </head>
-
-
 <body>
 
-
-<!-- =========================
-     FLOATING PARTICLES
-========================= -->
-
-<div class="particles">
-
-  <span></span>
-  <span></span>
-  <span></span>
-  <span></span>
-  <span></span>
-  <span></span>
-  <span></span>
-  <span></span>
-
-</div>
-
-
-<!-- =========================
-     WINNING POPUP
-========================= -->
-
-<div class="winPopup">
-
-  🏆 WINNING SIGNAL • LIVE UPDATE
-
-</div>
-
-
-<!-- =========================
-     MAIN CARD
-========================= -->
-
-<div class="card">
-
-
-  <div class="logo">
-
-    <span>DG</span>
-
-  </div>
-
-
-  <div class="title">
-
-    DG PREDICTION HUB
-
-  </div>
-
-
-  <div class="divider"></div>
-
-
-  <div class="heading">
-
-    Join To Get Premium Access
-
-  </div>
-
-
-  <div class="subtitle">
-
-    Get Daily Exclusive Insights ✨
-
-  </div>
-
-
-  <a
-    href="https://t.me/+kX0O6mGTDaQ5MTU1"
-    target="_blank"
-    rel="noopener noreferrer"
-    class="join"
-    id="telegramBtn"
-  >
-
-    <span class="telegram">➤</span>
-
-    JOIN TELEGRAM
-
-    <span class="arrow">➤</span>
-
-  </a>
-
-
-  <div class="note">
-
-    Tap to open Telegram and join instantly
-
-  </div>
-
-
-  <!-- WINNING STATUS -->
-
-  <div class="winning">
-
-    <span class="winDot"></span>
-
-    WINNING SIGNALS ACTIVE
-
-  </div>
-
-
-  <div class="footer">
-
-    DG PREDICTION HUB • PREMIUM COMMUNITY
-
-  </div>
-
-
-</div>
-
-
-<script>
-
-/* =========================
-   TELEGRAM BUTTON
-   META PIXEL EVENT
-========================= */
-
-document
-.getElementById("telegramBtn")
-.addEventListener("click",function(){
-
-  if(typeof fbq === "function"){
-
-    fbq(
-      "track",
-      "Subscribe"
-    );
-
-  }
-
-});
-
-
-/* =========================
-   EXTRA RANDOM PARTICLES
-========================= */
-
-const particles =
-document.querySelector(".particles");
-
-for(let i = 0; i < 8; i++){
-
-  const dot =
-  document.createElement("span");
-
-  dot.style.left =
-    Math.random() * 100 + "%";
-
-  dot.style.animationDuration =
-    (6 + Math.random() * 7) + "s";
-
-  dot.style.animationDelay =
-    Math.random() * 5 + "s";
-
-  particles.appendChild(dot);
-
-}
-
-</script>
-
+    <div class="main-container">
+        <!-- Top Status Bar -->
+        <div class="top-header">
+            <div class="header-text">DGX PRIME</div>
+            <div class="live-badge">
+                <span class="live-dot"></span> 98% WIN RATE
+            </div>
+        </div>
+
+        <!-- Animated Logo -->
+        <div class="logo-wrapper">
+            <div class="logo-circle">
+                <span>DgX</span>
+            </div>
+        </div>
+
+        <!-- Main Heading & Subheadings -->
+        <h1 class="main-title">DgX Prime</h1>
+        <h2 class="subtitle">🚀 Premium Trading Community</h2>
+        <p class="description">Join our exclusive Telegram community for winning trade signals, live chart analysis, and guaranteed profit strategies.</p>
+
+        <!-- Features Grid with Floating & Winning FX -->
+        <div class="features-grid">
+            <div class="feature-box">
+                <img src="https://img.icons8.com/?size=100&id=118641&format=png&color=ff007f" alt="Fast Signals" class="feature-icon">
+                <span class="feature-text">Fast Signals</span>
+            </div>
+            <div class="feature-box">
+                <img src="https://img.icons8.com/?size=100&id=2795&format=png&color=ff007f" alt="High Accuracy" class="feature-icon">
+                <span class="feature-text">High Accuracy</span>
+            </div>
+            <div class="feature-box">
+                <img src="https://img.icons8.com/?size=100&id=9657&format=png&color=ff007f" alt="VIP Access" class="feature-icon">
+                <span class="feature-text">VIP Access</span>
+            </div>
+        </div>
+
+        <!-- High Converting CTA Button with Your Link -->
+        <div class="join-btn-wrapper">
+            <a href="https://t.me/+kX0O6mGTDaQ5MTU1" target="_blank" class="join-btn">
+                <img src="https://img.icons8.com/?size=100&id=63306&format=png&color=ffffff" alt="Telegram">
+                JOIN TELEGRAM NOW
+                <span class="arrow-icon">→</span>
+            </a>
+        </div>
+
+        <p class="footer-text">⚡ Tap above to join free VIP channel</p>
+        <p class="disclaimer-text">DgX Prime Official • Secure & Verified</p>
+    </div>
 
 </body>
-  </html>
+</html>
