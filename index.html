@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>𝗠𝘂𝘀𝗸𝗮𝗻 𝗖𝗹𝘂𝗯❤️</title>
+<title>Muskan Club ❤️</title>
 
 <meta name="description" content="Join Muskan Club on Telegram.">
 
-
-<!-- Meta Pixel Code -->
+<!-- =========================
+     META PIXEL
+========================= -->
 
 <script>
 !function(f,b,e,v,n,t,s)
@@ -41,10 +41,8 @@ s.parentNode.insertBefore(t,s)
 'https://connect.facebook.net/en_US/fbevents.js');
 
 fbq('init', '1734610900989359');
-
 fbq('track', 'PageView');
 </script>
-
 
 <noscript>
 <img
@@ -55,7 +53,7 @@ src="https://www.facebook.com/tr?id=1734610900989359&ev=PageView&noscript=1"
 />
 </noscript>
 
-<!-- End Meta Pixel Code -->
+<!-- END META PIXEL -->
 
 
 <style>
@@ -72,120 +70,122 @@ html{
 
 body{
     min-height:100vh;
-    background:#050505;
+    background:#05030a;
     color:#fff;
     font-family:Arial,Helvetica,sans-serif;
-    display:flex;
-    justify-content:center;
     overflow-x:hidden;
 }
 
 
-/* BACKGROUND */
+/* =========================
+   BACKGROUND
+========================= */
 
 body::before{
     content:"";
     position:fixed;
-
-    width:420px;
-    height:420px;
-
-    top:-210px;
+    width:430px;
+    height:430px;
+    top:-190px;
     left:-190px;
 
     background:radial-gradient(
         circle,
-        rgba(212,163,55,.16),
-        transparent 68%
+        rgba(116,47,255,.25) 0%,
+        rgba(116,47,255,.08) 35%,
+        transparent 70%
     );
 
-    filter:blur(25px);
-
+    filter:blur(35px);
     pointer-events:none;
 }
-
 
 body::after{
     content:"";
     position:fixed;
-
-    width:420px;
-    height:420px;
-
-    bottom:-230px;
+    width:400px;
+    height:400px;
     right:-190px;
+    bottom:-180px;
 
     background:radial-gradient(
         circle,
-        rgba(212,163,55,.10),
-        transparent 68%
+        rgba(255,32,143,.20) 0%,
+        rgba(255,32,143,.06) 38%,
+        transparent 70%
     );
 
-    filter:blur(25px);
-
+    filter:blur(35px);
     pointer-events:none;
 }
 
 
-/* MAIN */
+/* =========================
+   CONTAINER
+========================= */
 
 .container{
     width:100%;
-    max-width:480px;
+    max-width:470px;
 
-    padding:34px 18px 30px;
+    min-height:100vh;
 
-    text-align:center;
+    margin:auto;
+
+    padding:30px 17px 28px;
 
     position:relative;
-
     z-index:2;
+
+    text-align:center;
 }
 
 
-/* TOP BADGE */
+/* =========================
+   TOP BADGE
+========================= */
 
 .badge{
     display:inline-flex;
 
     align-items:center;
+    gap:8px;
 
-    gap:7px;
-
-    padding:7px 14px;
+    padding:8px 14px;
 
     border-radius:50px;
 
-    background:rgba(212,163,55,.055);
+    background:rgba(255,255,255,.035);
 
-    border:1px solid rgba(212,163,55,.22);
+    border:1px solid rgba(255,255,255,.09);
 
-    color:#d9b75b;
+    color:#c7bdd5;
 
-    font-size:11px;
+    font-size:10px;
 
     font-weight:800;
 
-    letter-spacing:.7px;
+    letter-spacing:1px;
 
-    margin-bottom:19px;
+    margin-bottom:20px;
+
+    backdrop-filter:blur(12px);
 }
 
-
 .badge-dot{
-    width:6px;
-    height:6px;
+    width:7px;
+    height:7px;
 
     border-radius:50%;
 
-    background:#d8ad42;
+    background:#ff2996;
 
     box-shadow:
-        0 0 10px rgba(216,173,66,.75);
+        0 0 8px #ff2996,
+        0 0 16px rgba(255,41,150,.55);
 
-    animation:pulse 1.6s infinite;
+    animation:pulse 1.8s infinite;
 }
-
 
 @keyframes pulse{
 
@@ -202,29 +202,50 @@ body::after{
 }
 
 
-/* LOGO */
+/* =========================
+   LOGO
+========================= */
 
-.logo-wrap{
+.logo-box{
+    position:relative;
+
     width:88px;
     height:88px;
 
-    margin:0 auto 17px;
+    margin:0 auto 18px;
 
     padding:3px;
 
     border-radius:50%;
 
     background:linear-gradient(
-        145deg,
-        #f0cf72,
-        #9b701d
+        135deg,
+        #8b42ff,
+        #ff2996
     );
 
     box-shadow:
-        0 0 15px rgba(214,170,65,.22),
-        0 0 35px rgba(214,170,65,.08);
+        0 0 20px rgba(139,66,255,.25),
+        0 0 40px rgba(255,41,150,.12);
+
+    animation:logoGlow 3s ease-in-out infinite;
 }
 
+@keyframes logoGlow{
+
+    0%,100%{
+        box-shadow:
+        0 0 20px rgba(139,66,255,.25),
+        0 0 40px rgba(255,41,150,.10);
+    }
+
+    50%{
+        box-shadow:
+        0 0 27px rgba(139,66,255,.38),
+        0 0 55px rgba(255,41,150,.17);
+    }
+
+}
 
 .logo{
     width:100%;
@@ -236,45 +257,56 @@ body::after{
 
     border-radius:50%;
 
-    background:#111;
+    background:#09070e;
 }
 
 
-/* TITLE */
+/* =========================
+   TITLE
+========================= */
 
-h1{
-    font-size:32px;
+.title{
+    font-size:34px;
 
-    line-height:1.15;
+    line-height:1.1;
 
     font-weight:900;
 
-    letter-spacing:-.7px;
+    letter-spacing:-1px;
 
     margin-bottom:10px;
 
-    color:#fff;
+    background:linear-gradient(
+        90deg,
+        #ffffff,
+        #e7dfff,
+        #ffb7df
+    );
+
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
 }
-
-
-/* HEART */
 
 .heart{
-    color:#ff3b6b;
+    -webkit-text-fill-color:#ff2996;
+
+    color:#ff2996;
 
     text-shadow:
-        0 0 12px rgba(255,59,107,.35);
+        0 0 15px rgba(255,41,150,.45);
 }
 
 
-/* SUBTITLE */
+/* =========================
+   SUBTITLE
+========================= */
 
 .subtitle{
-    max-width:360px;
+    max-width:350px;
 
     margin:0 auto 24px;
 
-    color:#929292;
+    color:#91899c;
 
     font-size:13px;
 
@@ -282,58 +314,83 @@ h1{
 }
 
 
-/* COMMUNITY CARD */
+/* =========================
+   MAIN GLASS CARD
+========================= */
 
-.card{
+.main-card{
     position:relative;
 
-    padding:20px 17px;
+    padding:18px;
 
-    border-radius:20px;
+    border-radius:22px;
 
-    background:linear-gradient(
-        145deg,
-        rgba(255,255,255,.045),
-        rgba(255,255,255,.018)
-    );
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255,255,255,.055),
+            rgba(255,255,255,.018)
+        );
 
-    border:1px solid rgba(255,255,255,.075);
+    border:1px solid rgba(255,255,255,.085);
 
     box-shadow:
-        0 18px 50px rgba(0,0,0,.35),
-        inset 0 1px rgba(255,255,255,.045);
+        0 25px 70px rgba(0,0,0,.45),
+        inset 0 1px rgba(255,255,255,.05);
+
+    backdrop-filter:blur(18px);
 
     overflow:hidden;
 
-    margin-bottom:15px;
+    margin-bottom:14px;
 }
 
-
-/* GOLD LINE */
-
-.card::before{
+.main-card::before{
     content:"";
 
     position:absolute;
 
-    top:0;
-    left:15%;
+    width:170px;
+    height:170px;
 
-    width:70%;
-    height:1px;
+    top:-100px;
+    right:-70px;
 
-    background:linear-gradient(
-        90deg,
-        transparent,
-        rgba(220,174,65,.55),
-        transparent
+    background:radial-gradient(
+        circle,
+        rgba(139,66,255,.16),
+        transparent 70%
     );
+
+    pointer-events:none;
+}
+
+.main-card::after{
+    content:"";
+
+    position:absolute;
+
+    width:140px;
+    height:140px;
+
+    bottom:-100px;
+    left:-60px;
+
+    background:radial-gradient(
+        circle,
+        rgba(255,41,150,.12),
+        transparent 70%
+    );
+
+    pointer-events:none;
 }
 
 
-/* COMMUNITY */
+/* =========================
+   CARD HEADER
+========================= */
 
-.community{
+.card-top{
     display:flex;
 
     align-items:center;
@@ -341,142 +398,190 @@ h1{
     justify-content:space-between;
 
     text-align:left;
+
+    padding-bottom:16px;
+
+    border-bottom:1px solid rgba(255,255,255,.065);
 }
 
-
-.community-left{
+.card-left{
     display:flex;
 
     align-items:center;
 
-    gap:12px;
+    gap:11px;
 }
 
-
-.community-icon{
+.channel-icon{
     width:42px;
     height:42px;
 
     display:flex;
 
     align-items:center;
-
     justify-content:center;
 
     border-radius:13px;
 
-    background:rgba(212,163,55,.07);
+    background:
+        linear-gradient(
+            135deg,
+            rgba(139,66,255,.18),
+            rgba(255,41,150,.10)
+        );
 
-    border:1px solid rgba(212,163,55,.17);
+    border:1px solid rgba(139,66,255,.22);
 
-    font-size:19px;
+    font-size:18px;
+
+    box-shadow:
+        0 0 18px rgba(139,66,255,.08);
 }
 
+.small-label{
+    color:#70687c;
 
-.community-label{
-    color:#777;
+    font-size:9px;
 
-    font-size:10px;
+    font-weight:700;
 
-    letter-spacing:.6px;
+    letter-spacing:1px;
 
     margin-bottom:4px;
 }
 
-
-.community-title{
-    color:#eee;
+.channel-name{
+    color:#eee9f5;
 
     font-size:14px;
 
     font-weight:800;
 }
 
+.active{
+    display:flex;
 
-.status{
-    color:#d7b456;
+    align-items:center;
 
-    font-size:10px;
-
-    font-weight:800;
+    gap:5px;
 
     padding:6px 9px;
 
     border-radius:30px;
 
-    background:rgba(212,163,55,.06);
+    background:rgba(255,41,150,.055);
 
-    border:1px solid rgba(212,163,55,.15);
-}
+    border:1px solid rgba(255,41,150,.13);
 
+    color:#ff7cbd;
 
-/* FEATURES */
-
-.features{
-    display:grid;
-
-    grid-template-columns:1fr 1fr;
-
-    gap:10px;
-
-    margin-bottom:17px;
-}
-
-
-.feature{
-    text-align:left;
-
-    padding:16px 13px;
-
-    min-height:105px;
-
-    border-radius:17px;
-
-    background:rgba(255,255,255,.025);
-
-    border:1px solid rgba(255,255,255,.065);
-
-    transition:.25s ease;
-}
-
-
-.feature:hover{
-    transform:translateY(-2px);
-
-    border-color:rgba(212,163,55,.22);
-
-    background:rgba(212,163,55,.035);
-}
-
-
-.feature-icon{
-    font-size:18px;
-
-    margin-bottom:9px;
-}
-
-
-.feature-title{
-    font-size:13px;
+    font-size:9px;
 
     font-weight:800;
+}
 
-    margin-bottom:5px;
+.active span{
+    width:5px;
+    height:5px;
 
-    color:#eee;
+    border-radius:50%;
+
+    background:#ff2996;
+
+    box-shadow:0 0 8px #ff2996;
 }
 
 
-.feature-text{
-    color:#6f7271;
+/* =========================
+   STATS
+========================= */
+
+.stats{
+    display:grid;
+
+    grid-template-columns:1fr 1fr 1fr;
+
+    padding-top:17px;
+}
+
+.stat{
+    text-align:center;
+
+    position:relative;
+}
+
+.stat:not(:last-child)::after{
+    content:"";
+
+    position:absolute;
+
+    right:0;
+
+    top:5px;
+
+    width:1px;
+
+    height:30px;
+
+    background:rgba(255,255,255,.07);
+}
+
+.stat-number{
+    font-size:17px;
+
+    font-weight:900;
+
+    color:#f5f1f8;
+
+    margin-bottom:4px;
+}
+
+.stat-label{
+    font-size:9px;
+
+    color:#777080;
+
+    text-transform:uppercase;
+
+    letter-spacing:.5px;
+}
+
+
+/* =========================
+   HIGHLIGHT
+========================= */
+
+.highlight{
+    margin-top:14px;
+
+    padding:13px;
+
+    border-radius:15px;
+
+    background:
+        linear-gradient(
+            100deg,
+            rgba(139,66,255,.08),
+            rgba(255,41,150,.05)
+        );
+
+    border:1px solid rgba(139,66,255,.10);
+
+    color:#a69db0;
 
     font-size:10px;
 
-    line-height:1.45;
+    line-height:1.5;
+}
+
+.highlight strong{
+    color:#e7dfff;
 }
 
 
-/* TELEGRAM BUTTON */
+/* =========================
+   CTA
+========================= */
 
 .join-btn{
     position:relative;
@@ -489,21 +594,25 @@ h1{
 
     width:100%;
 
-    min-height:62px;
+    min-height:64px;
 
     padding:16px 20px;
 
-    border-radius:16px;
+    border-radius:17px;
 
     text-decoration:none;
 
-    color:#080705;
+    color:#fff;
 
-    background:linear-gradient(
-        135deg,
-        #f2d27a,
-        #d39d2f
-    );
+    background:
+        linear-gradient(
+            100deg,
+            #7138ff,
+            #a83eff 45%,
+            #ff2996
+        );
+
+    border:1px solid rgba(255,255,255,.12);
 
     font-size:16px;
 
@@ -512,14 +621,15 @@ h1{
     letter-spacing:.1px;
 
     box-shadow:
-        0 0 18px rgba(212,163,55,.20),
-        0 12px 35px rgba(0,0,0,.28);
+        0 12px 35px rgba(116,47,255,.22),
+        0 0 30px rgba(255,41,150,.08);
 
     overflow:hidden;
 
     transition:.25s ease;
-}
 
+    margin-top:15px;
+}
 
 .join-btn::before{
     content:"";
@@ -527,107 +637,123 @@ h1{
     position:absolute;
 
     top:0;
-    left:-100%;
+    left:-120%;
 
-    width:55%;
+    width:65%;
     height:100%;
 
-    background:rgba(255,255,255,.32);
+    background:linear-gradient(
+        90deg,
+        transparent,
+        rgba(255,255,255,.28),
+        transparent
+    );
 
     transform:skewX(-25deg);
 
-    animation:shine 3.2s infinite;
+    animation:shine 3.5s infinite;
 }
-
 
 @keyframes shine{
 
     0%{
-        left:-100%;
+        left:-120%;
     }
 
     45%,100%{
-        left:145%;
+        left:150%;
     }
 
 }
 
-
 .join-btn span{
     position:relative;
-
     z-index:2;
 }
-
 
 .join-btn:hover{
     transform:translateY(-2px);
 
     box-shadow:
-        0 0 28px rgba(212,163,55,.28),
-        0 15px 40px rgba(0,0,0,.30);
+        0 16px 42px rgba(116,47,255,.30),
+        0 0 35px rgba(255,41,150,.13);
 }
-
 
 .join-btn:active{
     transform:scale(.98);
 }
 
 
-/* NOTE */
+/* =========================
+   NOTE
+========================= */
 
 .note{
-    margin-top:10px;
+    margin-top:11px;
 
-    color:#656565;
+    color:#5e5865;
 
     font-size:10px;
 }
 
-
 .note-dot{
-    color:#d6ad4b;
+    color:#ff2996;
 
     margin-right:4px;
+
+    text-shadow:0 0 8px #ff2996;
 }
 
 
-/* FOOTER */
+/* =========================
+   FOOTER
+========================= */
 
 .footer{
     margin-top:22px;
 
-    color:#414141;
+    color:#39343f;
 
     font-size:9px;
+
+    letter-spacing:.3px;
 }
 
 
-/* MOBILE */
+/* =========================
+   MOBILE
+========================= */
 
 @media(max-width:380px){
 
     .container{
-        padding:28px 14px 25px;
+        padding:27px 14px 25px;
     }
 
-    .logo-wrap{
+    .logo-box{
         width:82px;
         height:82px;
     }
 
-    h1{
-        font-size:29px;
+    .title{
+        font-size:30px;
     }
 
     .subtitle{
         font-size:12px;
     }
 
-    .feature{
-        padding:14px 11px;
+    .main-card{
+        padding:16px;
+    }
 
-        min-height:100px;
+    .channel-name{
+        font-size:13px;
+    }
+
+    .join-btn{
+        min-height:61px;
+        font-size:15px;
     }
 
 }
@@ -643,7 +769,7 @@ h1{
 <div class="container">
 
 
-    <!-- TOP BADGE -->
+    <!-- BADGE -->
 
     <div class="badge">
 
@@ -656,22 +782,22 @@ h1{
 
     <!-- LOGO -->
 
-    <div class="logo-wrap">
+    <div class="logo-box">
 
         <img
-            src="IMG_20260813_102516_176.jpg"
-            alt="Muskan Club Logo"
+            src="logo.png"
+            alt="Muskan Club"
             class="logo"
         >
 
     </div>
 
 
-    <!-- NAME -->
+    <!-- TITLE -->
 
-    <h1>
+    <h1 class="title">
 
-        𝗠𝘂𝘀𝗸𝗮𝗻 𝗖𝗹𝘂𝗯<span class="heart">❤️</span>
+        Muskan Club<span class="heart">❤️</span>
 
     </h1>
 
@@ -680,23 +806,25 @@ h1{
 
     <div class="subtitle">
 
-        Join our growing Telegram community
-        and stay connected with the latest updates.
+        Welcome to the community.
+        Join us on Telegram and stay connected
+        with the latest updates.
 
     </div>
 
 
-    <!-- COMMUNITY CARD -->
+    <!-- MAIN CARD -->
 
-    <div class="card">
-
-        <div class="community">
+    <div class="main-card">
 
 
-            <div class="community-left">
+        <div class="card-top">
 
 
-                <div class="community-icon">
+            <div class="card-left">
+
+
+                <div class="channel-icon">
 
                     ✦
 
@@ -705,16 +833,16 @@ h1{
 
                 <div>
 
-                    <div class="community-label">
+                    <div class="small-label">
 
                         COMMUNITY
 
                     </div>
 
 
-                    <div class="community-title">
+                    <div class="channel-name">
 
-                        Muskan Club Community
+                        Muskan Club
 
                     </div>
 
@@ -724,122 +852,84 @@ h1{
             </div>
 
 
-            <div class="status">
+            <div class="active">
 
-                ● ACTIVE
+                <span></span>
+
+                ACTIVE
 
             </div>
 
 
         </div>
 
-    </div>
+
+        <!-- STATS -->
+
+        <div class="stats">
 
 
-    <!-- FEATURES -->
+            <div class="stat">
 
-    <div class="features">
+                <div class="stat-number">
+
+                    1K+
+
+                </div>
+
+                <div class="stat-label">
+
+                    Members
+
+                </div>
+
+            </div>
 
 
-        <div class="feature">
+            <div class="stat">
 
-            <div class="feature-icon">
+                <div class="stat-number">
 
-                ⚡
+                    Daily
+
+                </div>
+
+                <div class="stat-label">
+
+                    Updates
+
+                </div>
 
             </div>
 
 
-            <div class="feature-title">
+            <div class="stat">
 
-                Regular Updates
+                <div class="stat-number">
+
+                    24/7
+
+                </div>
+
+                <div class="stat-label">
+
+                    Active
+
+                </div>
 
             </div>
 
-
-            <div class="feature-text">
-
-                Stay updated with fresh community content.
-
-            </div>
 
         </div>
 
 
+        <!-- HIGHLIGHT -->
 
-        <div class="feature">
+        <div class="highlight">
 
-            <div class="feature-icon">
-
-                🔥
-
-            </div>
-
-
-            <div class="feature-title">
-
-                Active Community
-
-            </div>
-
-
-            <div class="feature-text">
-
-                Connect with an active growing community.
-
-            </div>
-
-        </div>
-
-
-
-        <div class="feature">
-
-            <div class="feature-icon">
-
-                ✨
-
-            </div>
-
-
-            <div class="feature-title">
-
-                Premium Experience
-
-            </div>
-
-
-            <div class="feature-text">
-
-                Simple, clean and easy Telegram experience.
-
-            </div>
-
-        </div>
-
-
-
-        <div class="feature">
-
-            <div class="feature-icon">
-
-                🔒
-
-            </div>
-
-
-            <div class="feature-title">
-
-                Easy Access
-
-            </div>
-
-
-            <div class="feature-text">
-
-                Join directly through Telegram.
-
-            </div>
+            <strong>✨ You're invited.</strong>
+            Join the Muskan Club community
+            directly through Telegram.
 
         </div>
 
@@ -847,7 +937,7 @@ h1{
     </div>
 
 
-    <!-- ONE TELEGRAM BUTTON -->
+    <!-- ONE CTA BUTTON -->
 
     <a
         id="telegramBtn"
@@ -868,7 +958,7 @@ h1{
 
         <span class="note-dot">●</span>
 
-        Opens Telegram in a new tab
+        Opens Telegram securely
 
     </div>
 
@@ -877,7 +967,7 @@ h1{
 
     <div class="footer">
 
-        © 2026 𝗠𝘂𝘀𝗸𝗮𝗻 𝗖𝗹𝘂𝗯❤️
+        © 2026 Muskan Club ❤️
 
     </div>
 
@@ -885,7 +975,9 @@ h1{
 </div>
 
 
-<!-- Subscribe tracking -->
+<!-- =========================
+     SUBSCRIBE TRACKING
+========================= -->
 
 <script>
 
@@ -905,5 +997,4 @@ document
 
 
 </body>
-
-</html>
+    </html>
