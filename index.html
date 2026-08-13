@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>𝗠𝘂𝘀𝗸𝗮𝗻 𝗖𝗹𝘂𝗯❤️</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    min-height:100vh;
+    font-family:Arial,Helvetica,sans-serif;
+    background:#050505;
+    color:#fff;
+    display:flex;
+    justify-content:center;
+    overflow-x:hidden;
+}
+
+/* GOLD GLOW */
+
+body::before{
+    content:"";
+    position:fixed;
+    width:420px;
+    height:420px;
+    top:-180px;
+    left:-170px;
+    background:radial-gradient(
+        circle,
+        rgba(255,190,40,.16),
+        transparent 70%
+    );
+    filter:blur(30px);
+    pointer-events:none;
+}
+
+body::after{
+    content:"";
+    position:fixed;
+    width:420px;
+    height:420px;
+    bottom:-200px;
+    right:-160px;
+    background:radial-gradient(
+        circle,
+        rgba(255,150,20,.12),
+        transparent 70%
+    );
+    filter:blur(30px);
+    pointer-events:none;
+}
+
+
+/* MAIN */
+
+.container{
+    width:100%;
+    max-width:500px;
+    padding:32px 20px 35px;
+    text-align:center;
+    position:relative;
+    z-index:2;
+}
+
+
+/* LIVE BADGE */
+
+.live-badge{
+    display:inline-flex;
+    align-items:center;
+    gap:7px;
+
+    padding:8px 16px;
+
+    border-radius:50px;
+
+    background:rgba(255,190,40,.07);
+
+    border:1px solid rgba(255,190,40,.25);
+
+    color:#f7d77b;
+
+    font-size:12px;
+    font-weight:bold;
+
+    margin-bottom:22px;
+}
+
+.live-dot{
+    width:7px;
+    height:7px;
+
+    border-radius:50%;
+
+    background:#ffc52e;
+
+    box-shadow:0 0 12px rgba(255,197,46,.8);
+
+    animation:pulse 1.4s infinite;
+}
+
+@keyframes pulse{
+    0%,100%{
+        opacity:1;
+        transform:scale(1);
+    }
+
+    50%{
+        opacity:.45;
+        transform:scale(.75);
+    }
+}
+
+
+/* LOGO */
+
+.logo{
+    width:145px;
+    height:145px;
+
+    object-fit:cover;
+
+    border-radius:50%;
+
+    margin:0 auto 20px;
+
+    border:2px solid #dcae3d;
+
+    box-shadow:
+        0 0 18px rgba(255,190,40,.35),
+        0 0 55px rgba(255,190,40,.13);
+}
+
+
+/* NAME */
+
+h1{
+    font-size:34px;
+    line-height:1.15;
+
+    font-weight:900;
+
+    margin-bottom:12px;
+
+    letter-spacing:-.5px;
+
+    text-shadow:
+        0 0 20px rgba(255,190,40,.12);
+}
+
+
+/* SUBTITLE */
+
+.subtitle{
+    color:#aaa;
+
+    font-size:14px;
+
+    line-height:1.6;
+
+    margin-bottom:25px;
+}
+
+
+/* JOIN BUTTON */
+
+.join-btn{
+    position:relative;
+
+    display:flex;
+
+    align-items:center;
+    justify-content:center;
+
+    width:100%;
+
+    min-height:62px;
+
+    padding:16px 20px;
+
+    border-radius:16px;
+
+    text-decoration:none;
+
+    color:#080600;
+
+    background:linear-gradient(
+        135deg,
+        #ffe08a,
+        #d89b18
+    );
+
+    font-size:17px;
+
+    font-weight:900;
+
+    box-shadow:
+        0 0 20px rgba(255,190,40,.22),
+        0 12px 35px rgba(255,190,40,.10);
+
+    overflow:hidden;
+
+    transition:.25s ease;
+
+    margin-bottom:12px;
+}
+
+
+.join-btn::before{
+    content:"";
+
+    position:absolute;
+
+    top:0;
+    left:-100%;
+
+    width:60%;
+    height:100%;
+
+    background:rgba(255,255,255,.35);
+
+    transform:skewX(-25deg);
+
+    animation:shine 3s infinite;
+}
+
+
+@keyframes shine{
+
+    0%{
+        left:-100%;
+    }
+
+    45%,100%{
+        left:140%;
+    }
+
+}
+
+
+.join-btn:hover{
+    transform:translateY(-2px);
+
+    box-shadow:
+        0 0 30px rgba(255,190,40,.35),
+        0 15px 45px rgba(255,190,40,.14);
+}
+
+
+.join-btn:active{
+    transform:scale(.98);
+}
+
+
+/* SMALL NOTE */
+
+.telegram-note{
+    font-size:12px;
+
+    color:#777;
+
+    margin-bottom:24px;
+}
+
+.telegram-note span{
+    color:#e4b73c;
+
+    text-shadow:
+        0 0 10px rgba(255,190,40,.6);
+}
+
+
+/* FEATURES */
+
+.features{
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:11px;
+
+    margin-bottom:24px;
+}
+
+
+.feature{
+    min-height:120px;
+
+    padding:18px 12px;
+
+    border-radius:17px;
+
+    background:rgba(255,255,255,.035);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    box-shadow:
+        0 10px 30px rgba(0,0,0,.28),
+        inset 0 1px rgba(255,255,255,.04);
+
+    transition:.3s ease;
+}
+
+
+.feature:hover{
+    transform:translateY(-3px);
+
+    border-color:rgba(255,190,40,.25);
+
+    box-shadow:
+        0 10px 35px rgba(255,190,40,.08);
+}
+
+
+.feature-icon{
+    font-size:22px;
+
+    margin-bottom:10px;
+
+    color:#f0c34b;
+
+    text-shadow:
+        0 0 12px rgba(255,190,40,.45);
+}
+
+
+.feature-title{
+    font-size:14px;
+
+    font-weight:800;
+
+    margin-bottom:6px;
+}
+
+
+.feature-text{
+    font-size:11px;
+
+    line-height:1.45;
+
+    color:#777d7a;
+}
+
+
+/* SECOND CTA */
+
+.bottom-title{
+    font-size:18px;
+
+    font-weight:900;
+
+    margin-bottom:7px;
+}
+
+
+.bottom-text{
+    color:#777;
+
+    font-size:12px;
+
+    line-height:1.5;
+
+    margin-bottom:15px;
+}
+
+
+/* FOOTER */
+
+.footer{
+    margin-top:24px;
+
+    color:#4e4e4e;
+
+    font-size:10px;
+}
+
+
+/* MOBILE */
+
+@media(max-width:380px){
+
+    .container{
+        padding:27px 15px 30px;
+    }
+
+    .logo{
+        width:125px;
+        height:125px;
+    }
+
+    h1{
+        font-size:30px;
+    }
+
+    .subtitle{
+        font-size:13px;
+    }
+
+    .feature{
+        min-height:112px;
+        padding:15px 10px;
+    }
+
+}
+
+</style>
+</head>
+
+
+<body>
+
+<div class="container">
+
+
+    <!-- LIVE -->
+
+    <div class="live-badge">
+
+        <span class="live-dot"></span>
+
+        LIVE ON TELEGRAM
+
+    </div>
+
+
+    <!-- LOGO -->
+
+    <img
+        src="logo.png"
+        alt="Muskan Club Logo"
+        class="logo"
+    >
+
+
+    <!-- NAME -->
+
+    <h1>
+        𝗠𝘂𝘀𝗸𝗮𝗻 𝗖𝗹𝘂𝗯❤️
+    </h1>
+
+
+    <!-- DESCRIPTION -->
+
+    <div class="subtitle">
+
+        Join our Telegram community for
+        entertainment, updates, trending content
+        and more.
+
+    </div>
+
+
+    <!-- FIRST BUTTON -->
+
+    <a
+        class="join-btn"
+        href="https://t.me/+kX0O6mGTDaQ5MTU1"
+        target="_blank"
+        rel="noopener noreferrer"
+    >
+
+        ➤ JOIN TELEGRAM
+
+    </a>
+
+
+    <!-- NOTE -->
+
+    <div class="telegram-note">
+
+        <span>●</span>
+        Opens Telegram in a new tab
+
+    </div>
+
+
+    <!-- FEATURES -->
+
+    <div class="features">
+
+
+        <div class="feature">
+
+            <div class="feature-icon">
+                ⚡
+            </div>
+
+            <div class="feature-title">
+                Fast Updates
+            </div>
+
+            <div class="feature-text">
+                Get the latest updates and trending content.
+            </div>
+
+        </div>
+
+
+        <div class="feature">
+
+            <div class="feature-icon">
+                🔥
+            </div>
+
+            <div class="feature-title">
+                Active Community
+            </div>
+
+            <div class="feature-text">
+                Stay connected with our growing community.
+            </div>
+
+        </div>
+
+
+        <div class="feature">
+
+            <div class="feature-icon">
+                ✨
+            </div>
+
+            <div class="feature-title">
+                Premium Experience
+            </div>
+
+            <div class="feature-text">
+                Clean and easy community experience.
+            </div>
+
+        </div>
+
+
+        <div class="feature">
+
+            <div class="feature-icon">
+                🛡️
+            </div>
+
+            <div class="feature-title">
+                Easy Access
+            </div>
+
+            <div class="feature-text">
+                Join directly through Telegram in one tap.
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+    <!-- BOTTOM -->
+
+    <div class="bottom-title">
+        Ready to Join?
+    </div>
+
+
+    <div class="bottom-text">
+        Join the Muskan Club community today.
+    </div>
+
+
+    <!-- SECOND BUTTON -->
+
+    <a
+        class="join-btn"
+        href="https://t.me/+kX0O6mGTDaQ5MTU1"
+        target="_blank"
+        rel="noopener noreferrer"
+    >
+
+        🚀 JOIN NOW
+
+    </a>
+
+
+    <div class="footer">
+
+        © 2026 𝗠𝘂𝘀𝗸𝗮𝗻 𝗖𝗹𝘂𝗯❤️
+
+    </div>
+
+
+</div>
+
+</body>
+  </html>
