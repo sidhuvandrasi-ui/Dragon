@@ -7,11 +7,7 @@
 
 <title>DGX PRIME</title>
 
-
-<!-- =========================
-     META PIXEL
-========================= -->
-
+<!-- META PIXEL -->
 <script>
 !function(f,b,e,v,n,t,s)
 {
@@ -37,7 +33,7 @@ t.src=v;
 s=b.getElementsByTagName(e)[0];
 s.parentNode.insertBefore(t,s);
 
-}(window, document, 'script',
+}(window,document,'script',
 'https://connect.facebook.net/en_US/fbevents.js');
 
 fbq('init','1734610900989359');
@@ -53,14 +49,7 @@ src="https://www.facebook.com/tr?id=1734610900989359&ev=PageView&noscript=1"
 />
 </noscript>
 
-<!-- END META PIXEL -->
-
-
 <style>
-
-/* =========================
-   RESET
-========================= */
 
 *{
 margin:0;
@@ -81,34 +70,24 @@ Georgia,
 "Times New Roman",
 serif;
 
-color:#ff9b79;
-
 background:
-
 radial-gradient(
-circle at 50% 42%,
-rgba(130,15,0,.38),
-transparent 43%
+circle at 50% 40%,
+rgba(120,15,0,.38),
+transparent 45%
 ),
+#120000;
 
-radial-gradient(
-circle at 50% 100%,
-rgba(255,55,0,.18),
-transparent 42%
-),
-
-#160000;
+color:#ff9b7d;
 
 overflow-x:hidden;
 
 }
 
 
-/* =========================
-   BACKGROUND
-========================= */
+/* BACKGROUND */
 
-body::before{
+body:before{
 
 content:"";
 
@@ -119,23 +98,18 @@ inset:0;
 pointer-events:none;
 
 background:
-
 radial-gradient(
-circle at 50% 50%,
+circle at center,
 transparent 35%,
-rgba(0,0,0,.58) 100%
+rgba(0,0,0,.65)
 );
 
 }
 
 
-/* =========================
-   WRAPPER
-========================= */
+/* PAGE */
 
-.wrapper{
-
-width:100%;
+.page{
 
 min-height:100vh;
 
@@ -145,63 +119,52 @@ align-items:center;
 
 justify-content:center;
 
-padding:30px 18px;
+padding:25px 15px;
 
 }
 
 
-/* =========================
-   CARD
-========================= */
+/* CARD */
 
 .card{
 
 width:100%;
 
-max-width:710px;
+max-width:700px;
 
-height:auto;
+padding:58px 52px 42px;
 
-padding:70px 55px 50px;
-
-position:relative;
-
-border-radius:45px;
+border-radius:42px;
 
 background:
-
 linear-gradient(
 180deg,
-rgba(35,0,0,.90),
-rgba(12,0,0,.97)
+rgba(38,0,0,.94),
+rgba(12,0,0,.98)
 );
 
-border:2px solid rgba(180,25,15,.70);
+border:1px solid rgba(185,35,18,.75);
 
 box-shadow:
 
-0 0 20px rgba(150,20,0,.30),
+0 0 25px rgba(130,20,0,.28),
 
-0 0 60px rgba(100,0,0,.35),
+0 0 70px rgba(80,0,0,.35),
 
-inset 0 0 60px rgba(90,0,0,.20);
+inset 0 0 45px rgba(100,0,0,.18);
 
 }
 
 
-/* =========================
-   OFFICIAL CHANNEL
-========================= */
+/* OFFICIAL */
 
 .official{
 
-width:100%;
+width:82%;
 
-max-width:510px;
+height:62px;
 
-height:70px;
-
-margin:0 auto 65px;
+margin:0 auto 48px;
 
 display:flex;
 
@@ -209,126 +172,91 @@ align-items:center;
 
 justify-content:center;
 
-gap:20px;
+gap:15px;
 
-border-radius:45px;
+border-radius:50px;
 
-border:2px solid rgba(190,20,15,.75);
+border:1px solid rgba(190,35,20,.75);
 
 background:
+rgba(80,0,0,.28);
 
-linear-gradient(
-180deg,
-rgba(100,0,0,.38),
-rgba(45,0,0,.25)
-);
-
-color:#ffb09a;
-
-font-size:27px;
-
-letter-spacing:8px;
-
-white-space:nowrap;
-
-box-shadow:
-
-0 0 18px rgba(170,20,0,.25),
-
-inset 0 0 20px rgba(170,20,0,.12);
-
-}
-
-.official-symbol{
+color:#ffad95;
 
 font-size:21px;
 
-color:#ff9a7a;
+letter-spacing:6px;
+
+white-space:nowrap;
+
+}
+
+.official-icon{
+
+font-size:16px;
 
 }
 
 
-/* =========================
-   TITLE
-========================= */
+/* TITLE */
 
 .title{
 
 text-align:center;
 
-font-size:62px;
-
-line-height:1;
+font-size:58px;
 
 font-weight:900;
 
 letter-spacing:1px;
 
-color:#ff603e;
+line-height:1;
 
-text-transform:uppercase;
+color:#ff613d;
 
 text-shadow:
-
-0 0 5px rgba(255,80,40,.35),
-
-0 5px 12px rgba(0,0,0,.8);
-
-margin-bottom:20px;
+0 3px 12px rgba(0,0,0,.9);
 
 white-space:nowrap;
 
 }
 
 
-/* =========================
-   TITLE LINE
-========================= */
+/* LINE */
 
-.title-line{
+.line{
 
-width:260px;
+width:210px;
 
-height:4px;
+height:3px;
 
-margin:0 auto 58px;
-
-border-radius:50%;
+margin:22px auto 55px;
 
 background:
-
 linear-gradient(
 90deg,
 transparent,
-#ff4b25,
-#ff632f,
-#ff4b25,
+#ff512c,
+#ff7048,
+#ff512c,
 transparent
 );
 
 box-shadow:
-
-0 0 10px rgba(255,65,30,.65),
-
-0 0 25px rgba(255,65,30,.25);
+0 0 12px rgba(255,70,35,.45);
 
 }
 
 
-/* =========================
-   STATS
-========================= */
+/* STATS */
 
 .stats{
 
-width:100%;
-
 display:grid;
 
-grid-template-columns:
-repeat(3,1fr);
+grid-template-columns:repeat(3,1fr);
 
-margin-bottom:60px;
+margin-bottom:52px;
 
 }
 
@@ -340,7 +268,7 @@ position:relative;
 
 }
 
-.stat:not(:last-child)::after{
+.stat:not(:last-child):after{
 
 content:"";
 
@@ -348,67 +276,58 @@ position:absolute;
 
 right:0;
 
-top:8px;
+top:3px;
 
-height:70px;
+height:65px;
 
-width:2px;
+width:1px;
 
 background:
-
 linear-gradient(
 180deg,
 transparent,
-#7e180e,
+#8a2114,
 transparent
 );
 
 }
 
-.stat-number{
+.number{
 
 display:block;
 
-font-size:48px;
+font-size:43px;
 
 font-weight:900;
 
+color:#ff6846;
+
 line-height:1;
 
-color:#ff633f;
-
-margin-bottom:11px;
-
-text-shadow:
-
-0 3px 8px rgba(0,0,0,.8);
+margin-bottom:9px;
 
 }
 
-.stat-label{
+.label{
 
-font-size:20px;
+font-size:15px;
 
-letter-spacing:4px;
+letter-spacing:3px;
 
-color:#ff987c;
-
-text-transform:uppercase;
+color:#ff9b80;
 
 white-space:nowrap;
 
 }
 
 
-/* =========================
-   TELEGRAM BUTTON
-========================= */
+/* TELEGRAM BUTTON */
 
 .join{
 
 width:100%;
 
-height:115px;
+height:105px;
 
 display:flex;
 
@@ -416,413 +335,80 @@ align-items:center;
 
 justify-content:center;
 
-gap:25px;
+gap:20px;
 
-border-radius:65px;
+border-radius:60px;
 
 text-decoration:none;
 
 background:
 
 linear-gradient(
-90deg,
-#ff6437,
-#ff4b18
+135deg,
+#ff7045 0%,
+#ff5527 45%,
+#ff4218 100%
 );
 
-color:#080000;
+color:#170000;
 
 font-family:
 Arial,
 Helvetica,
 sans-serif;
 
-font-size:30px;
+font-size:27px;
 
-font-weight:700;
+font-weight:800;
 
-white-space:nowrap;
+letter-spacing:.3px;
 
 box-shadow:
 
-0 8px 35px rgba(255,60,20,.25);
+0 10px 30px rgba(255,70,25,.22),
 
-transition:.25s ease;
+inset 0 1px 0 rgba(255,255,255,.20);
 
-margin-bottom:58px;
+transition:
+transform .18s ease,
+box-shadow .18s ease;
+
+margin-bottom:48px;
 
 }
 
 .join:hover{
 
-transform:translateY(-3px);
+transform:translateY(-2px);
 
 box-shadow:
 
-0 10px 45px rgba(255,60,20,.45);
+0 14px 38px rgba(255,70,25,.34),
+
+inset 0 1px 0 rgba(255,255,255,.20);
 
 }
 
 .join:active{
 
-transform:scale(.98);
+transform:scale(.97);
 
 }
 
 .telegram{
 
-font-size:40px;
-
-font-weight:900;
+font-size:35px;
 
 transform:rotate(-18deg);
 
 }
 
 
-/* =========================
-   MEMBERS
-========================= */
+/* MEMBERS */
 
 .members{
 
 text-align:center;
-
-margin-bottom:55px;
-
-}
-
-.members-title{
-
-display:flex;
-
-align-items:center;
-
-justify-content:center;
-
-gap:15px;
-
-font-size:24px;
-
-letter-spacing:4px;
-
-color:#ff997d;
-
-margin-bottom:15px;
-
-white-space:nowrap;
-
-}
-
-.members-diamond{
-
-font-size:17px;
-
-color:#ff9878;
-
-}
-
-.members-count{
-
-display:flex;
-
-align-items:baseline;
-
-justify-content:center;
-
-white-space:nowrap;
-
-font-size:72px;
-
-font-weight:900;
-
-line-height:1;
-
-color:#ff5b36;
-
-text-shadow:
-
-0 4px 12px rgba(0,0,0,.8);
-
-}
-
-.members-count span{
-
-font-size:32px;
-
-margin-left:4px;
-
-}
-
-
-/* =========================
-   BOTTOM INFO
-========================= */
-
-.bottom-info{
-
-display:flex;
-
-justify-content:center;
-
-align-items:center;
-
-gap:25px;
-
-font-size:21px;
-
-letter-spacing:1px;
-
-color:#ff987b;
-
-margin-bottom:48px;
-
-white-space:nowrap;
-
-}
-
-.bottom-item{
-
-display:flex;
-
-align-items:center;
-
-gap:10px;
-
-white-space:nowrap;
-
-}
-
-.bottom-diamond{
-
-font-size:14px;
-
-color:#ff987b;
-
-}
-
-
-/* =========================
-   FOOTER
-========================= */
-
-.footer{
-
-text-align:center;
-
-font-family:
-Arial,
-Helvetica,
-sans-serif;
-
-font-size:16px;
-
-color:#88402f;
-
-letter-spacing:1px;
-
-white-space:nowrap;
-
-}
-
-.footer strong{
-
-color:#c96c54;
-
-}
-
-
-/* ==================================================
-   MOBILE
-================================================== */
-
-@media(max-width:600px){
-
-html,
-body{
-
-width:100%;
-
-min-height:100%;
-
-}
-
-body{
-
-overflow:hidden;
-
-}
-
-
-/* wrapper */
-
-.wrapper{
-
-width:100%;
-
-min-height:100dvh;
-
-height:100dvh;
-
-padding:15px;
-
-display:flex;
-
-align-items:center;
-
-justify-content:center;
-
-overflow:hidden;
-
-}
-
-
-/* =========================
-   MOBILE CARD
-========================= */
-
-.card{
-
-width:76vw;
-
-max-width:none;
-
-height:auto;
-
-min-height:0;
-
-padding:
-42px
-20px
-30px;
-
-border-radius:34px;
-
-}
-
-
-/* =========================
-   OFFICIAL
-========================= */
-
-.official{
-
-width:94%;
-
-height:55px;
-
-margin-bottom:48px;
-
-font-size:15px;
-
-letter-spacing:3.5px;
-
-gap:8px;
-
-}
-
-.official-symbol{
-
-font-size:14px;
-
-}
-
-
-/* =========================
-   TITLE
-========================= */
-
-.title{
-
-font-size:34px;
-
-margin-bottom:16px;
-
-}
-
-
-/* =========================
-   LINE
-========================= */
-
-.title-line{
-
-width:155px;
-
-height:3px;
-
-margin-bottom:47px;
-
-}
-
-
-/* =========================
-   STATS
-========================= */
-
-.stats{
-
-margin-bottom:52px;
-
-}
-
-.stat-number{
-
-font-size:30px;
-
-margin-bottom:8px;
-
-}
-
-.stat-label{
-
-font-size:9px;
-
-letter-spacing:2px;
-
-}
-
-.stat:not(:last-child)::after{
-
-height:52px;
-
-top:0;
-
-}
-
-
-/* =========================
-   TELEGRAM
-========================= */
-
-.join{
-
-width:100%;
-
-height:86px;
-
-margin-bottom:48px;
-
-border-radius:50px;
-
-font-size:19px;
-
-gap:12px;
-
-}
-
-.telegram{
-
-font-size:28px;
-
-}
-
-
-/* =========================
-   MEMBERS
-========================= */
-
-.members{
 
 margin-bottom:45px;
 
@@ -830,191 +416,403 @@ margin-bottom:45px;
 
 .members-title{
 
-font-size:15px;
+display:flex;
 
-letter-spacing:2.5px;
+justify-content:center;
 
-gap:8px;
+align-items:center;
+
+gap:12px;
+
+font-size:20px;
+
+letter-spacing:4px;
+
+color:#ff9d82;
 
 margin-bottom:13px;
 
-}
-
-.members-diamond{
-
-font-size:11px;
+white-space:nowrap;
 
 }
 
-.members-count{
+.diamond{
 
-font-size:55px;
+font-size:13px;
 
-}
-
-.members-count span{
-
-font-size:25px;
-
-margin-left:2px;
+color:#ff9d82;
 
 }
 
+.count{
 
-/* =========================
-   BOTTOM INFO
-========================= */
+font-family:
+Arial,
+Helvetica,
+sans-serif;
 
-.bottom-info{
+font-size:65px;
 
-gap:9px;
+font-weight:900;
 
-font-size:10px;
+color:#ff603c;
 
-letter-spacing:.5px;
+line-height:1;
 
-margin-bottom:38px;
+white-space:nowrap;
+
+}
+
+.count small{
+
+font-size:29px;
+
+}
+
+
+/* BOTTOM */
+
+.bottom{
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+gap:24px;
+
+font-size:17px;
+
+color:#ff987b;
+
+letter-spacing:1px;
+
+margin-bottom:37px;
+
+white-space:nowrap;
 
 }
 
 .bottom-item{
 
-gap:5px;
+display:flex;
+
+align-items:center;
+
+gap:8px;
 
 }
 
-.bottom-diamond{
 
-font-size:8px;
+/* FOOTER */
+
+.footer{
+
+text-align:center;
+
+font-family:Arial,sans-serif;
+
+font-size:13px;
+
+letter-spacing:1px;
+
+color:#7e392b;
+
+white-space:nowrap;
+
+}
+
+.footer strong{
+
+color:#bd654f;
 
 }
 
 
 /* =========================
-   FOOTER
+   MOBILE
 ========================= */
 
-.footer{
+@media(max-width:600px){
 
-font-size:8.5px;
+body{
+
+overflow:hidden;
 
 }
 
+.page{
+
+height:100dvh;
+
+min-height:100dvh;
+
+padding:12px;
+
+align-items:center;
+
 }
-
-
-/* ==================================================
-   SMALL PHONES
-================================================== */
-
-@media(max-width:380px){
 
 .card{
 
-width:78vw;
+width:76vw;
 
-padding:
-34px
-17px
-26px;
+padding:34px 18px 27px;
+
+border-radius:34px;
 
 }
+
+
+/* OFFICIAL */
 
 .official{
 
-height:50px;
+width:94%;
 
-margin-bottom:38px;
+height:48px;
 
-font-size:13px;
+margin-bottom:35px;
+
+font-size:12px;
 
 letter-spacing:2.5px;
 
+gap:7px;
+
 }
+
+
+/* TITLE */
 
 .title{
 
-font-size:30px;
+font-size:29px;
 
 }
 
-.title-line{
+.line{
 
 width:140px;
 
-margin-bottom:38px;
+height:3px;
+
+margin:16px auto 35px;
 
 }
+
+
+/* STATS */
 
 .stats{
 
-margin-bottom:42px;
+margin-bottom:36px;
 
 }
 
-.stat-number{
+.number{
 
-font-size:27px;
+font-size:26px;
+
+margin-bottom:7px;
 
 }
 
-.stat-label{
+.label{
 
 font-size:8px;
 
+letter-spacing:1.5px;
+
 }
+
+.stat:not(:last-child):after{
+
+height:45px;
+
+}
+
+
+/* BUTTON */
 
 .join{
 
-height:78px;
+height:72px;
 
-margin-bottom:40px;
+border-radius:50px;
 
 font-size:17px;
+
+gap:11px;
+
+margin-bottom:35px;
 
 }
 
 .telegram{
 
-font-size:25px;
+font-size:26px;
 
 }
 
+
+/* MEMBERS */
+
 .members{
 
-margin-bottom:38px;
+margin-bottom:32px;
 
 }
 
 .members-title{
 
-font-size:13px;
+font-size:12px;
+
+letter-spacing:2px;
+
+gap:7px;
+
+margin-bottom:10px;
 
 }
 
-.members-count{
+.count{
 
-font-size:50px;
-
-}
-
-.members-count span{
-
-font-size:22px;
+font-size:48px;
 
 }
 
-.bottom-info{
+.count small{
+
+font-size:21px;
+
+}
+
+
+/* BOTTOM */
+
+.bottom{
 
 font-size:8.5px;
+
+gap:9px;
+
+margin-bottom:26px;
+
+}
+
+.bottom-item{
+
+gap:4px;
+
+}
+
+
+/* FOOTER */
+
+.footer{
+
+font-size:7px;
+
+}
+
+}
+
+
+/* SMALL PHONES */
+
+@media(max-width:370px){
+
+.card{
+
+width:78vw;
+
+padding-top:28px;
+
+padding-bottom:23px;
+
+}
+
+.official{
+
+height:44px;
+
+margin-bottom:28px;
+
+font-size:11px;
+
+}
+
+.title{
+
+font-size:26px;
+
+}
+
+.line{
+
+margin-bottom:29px;
+
+}
+
+.stats{
 
 margin-bottom:30px;
 
 }
 
-.footer{
+.number{
+
+font-size:23px;
+
+}
+
+.label{
+
+font-size:7px;
+
+}
+
+.join{
+
+height:64px;
+
+font-size:15px;
+
+margin-bottom:29px;
+
+}
+
+.members{
+
+margin-bottom:27px;
+
+}
+
+.members-title{
+
+font-size:10px;
+
+}
+
+.count{
+
+font-size:43px;
+
+}
+
+.bottom{
 
 font-size:7.5px;
+
+margin-bottom:22px;
+
+}
+
+.footer{
+
+font-size:6.5px;
 
 }
 
@@ -1028,7 +826,7 @@ font-size:7.5px;
 <body>
 
 
-<div class="wrapper">
+<div class="page">
 
 
 <div class="card">
@@ -1038,13 +836,9 @@ font-size:7.5px;
 
 <div class="official">
 
-<span class="official-symbol">
-⊙
-</span>
+<span class="official-icon">◉</span>
 
-<span>
-OFFICIAL CHANNEL
-</span>
+<span>OFFICIAL CHANNEL</span>
 
 </div>
 
@@ -1056,7 +850,7 @@ DGX PRIME
 </div>
 
 
-<div class="title-line"></div>
+<div class="line"></div>
 
 
 <!-- STATS -->
@@ -1066,11 +860,11 @@ DGX PRIME
 
 <div class="stat">
 
-<span class="stat-number">
+<span class="number">
 98%
 </span>
 
-<span class="stat-label">
+<span class="label">
 ACCURACY
 </span>
 
@@ -1079,11 +873,11 @@ ACCURACY
 
 <div class="stat">
 
-<span class="stat-number">
+<span class="number">
 24/7
 </span>
 
-<span class="stat-label">
+<span class="label">
 SUPPORT
 </span>
 
@@ -1092,11 +886,11 @@ SUPPORT
 
 <div class="stat">
 
-<span class="stat-number">
+<span class="number">
 100%
 </span>
 
-<span class="stat-label">
+<span class="label">
 FREE
 </span>
 
@@ -1105,7 +899,7 @@ FREE
 </div>
 
 
-<!-- TELEGRAM BUTTON -->
+<!-- TELEGRAM -->
 
 <a
 href="https://t.me/+kX0O6mGTDaQ5MTU1"
@@ -1115,73 +909,51 @@ class="join"
 id="telegramBtn"
 >
 
-<span class="telegram">
-➤
-</span>
+<span class="telegram">➤</span>
 
-<span>
-Join on Telegram
-</span>
+<span>JOIN ON TELEGRAM</span>
 
 </a>
 
 
-<!-- ACTIVE MEMBERS -->
+<!-- MEMBERS -->
 
 <div class="members">
 
 <div class="members-title">
 
-<span class="members-diamond">
-◆
-</span>
+<span class="diamond">◆</span>
 
-<span>
-ACTIVE MEMBERS
-</span>
+<span>ACTIVE MEMBERS</span>
 
 </div>
 
-
-<div class="members-count">
-
-1.1<span>K+</span>
-
+<div class="count">
+1.1<small>K+</small>
 </div>
 
 </div>
 
 
-<!-- BOTTOM INFO -->
+<!-- BOTTOM -->
 
-<div class="bottom-info">
-
+<div class="bottom">
 
 <div class="bottom-item">
 
-<span class="bottom-diamond">
-◆
-</span>
+<span class="diamond">◆</span>
 
-<span>
-100% Free
-</span>
+<span>100% Free</span>
 
 </div>
-
 
 <div class="bottom-item">
 
-<span class="bottom-diamond">
-◆
-</span>
+<span class="diamond">◆</span>
 
-<span>
-New Content Daily
-</span>
+<span>New Content Daily</span>
 
 </div>
-
 
 </div>
 
@@ -1203,10 +975,6 @@ DGX PRIME •
 
 <script>
 
-/* =========================
-   TELEGRAM PIXEL EVENT
-========================= */
-
 document
 .getElementById("telegramBtn")
 .addEventListener("click",function(){
@@ -1223,4 +991,4 @@ fbq("track","Subscribe");
 
 
 </body>
-     </html>
+</html>
